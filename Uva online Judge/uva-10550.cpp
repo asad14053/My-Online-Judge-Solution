@@ -16,5 +16,5 @@ int main()
         else ans+=(c-d)*9;
         cout<<ans<<"\n";
     }
-return 0;
+    return 0;
 }

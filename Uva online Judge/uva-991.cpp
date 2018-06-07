@@ -10,7 +10,7 @@ long long factor(long long int n)
 }
 int main()
 {
-    long long int n,ans ,sum,div,d,x,cou=0;
+    long long int n,ans,sum,div,d,x,cou=0;
     while(scanf("%lld",&n)==1)
     {
         if(cou!=0)

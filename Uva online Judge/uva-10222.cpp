@@ -8,7 +8,7 @@ int main()
     while(gets(a))
     {
         l=strlen(a);
-        for(i=0;i<l;i++)
+        for(i=0; i<l; i++)
         {
             if(a[i]==']')
                 a[i]='p';

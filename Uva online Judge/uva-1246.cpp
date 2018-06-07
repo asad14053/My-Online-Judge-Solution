@@ -30,8 +30,8 @@ int main()
     while(a--)
     {
         scanf("%d %d",&j,&k);
-         check_print=check=true;
-        for(i=j;i<=k;i++)
+        check_print=check=true;
+        for(i=j; i<=k; i++)
         {
             if(!flag[divisor[i]])
             {

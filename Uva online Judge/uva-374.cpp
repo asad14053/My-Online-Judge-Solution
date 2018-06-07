@@ -1,6 +1,6 @@
 #include<bits/stdc++.h>
 using namespace std;
- long M(long  b, long p, long m)
+long M(long  b, long p, long m)
 {
     if(p==0) return 1;
     else if(p%2==0) return ((M(b,p/2,m))*(M(b,p/2,m)))%m;

@@ -7,7 +7,7 @@ int main ()
     char a [100];
     scanf ("%d", &t);
     while ( t--)
-     {
+    {
         scanf ("%s", a);
         if (strcmp (a, "donate")==0)
         {
@@ -15,7 +15,7 @@ int main ()
             s += d;
         }
         else if(strcmp(a,"report")==0)
-        printf ("%d\n", s);
+            printf ("%d\n", s);
     }
 
     return 0;

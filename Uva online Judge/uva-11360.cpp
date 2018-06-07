@@ -31,7 +31,7 @@ int main()
                 int a,b;
                 cin>>a>>b;
                 for(int j=0; j<n; j++)
-                  swap(mat[a-1][j],mat[b-1][j]);
+                    swap(mat[a-1][j],mat[b-1][j]);
             }
             if(str=="col")
             {

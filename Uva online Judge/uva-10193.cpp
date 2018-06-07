@@ -22,7 +22,7 @@ int main()
     char s1[32], s2[32];
 
     scanf("%d", &n);
-getchar();
+    getchar();
     for(int t = 1; t <= n; t++)
     {
         gets(s1);

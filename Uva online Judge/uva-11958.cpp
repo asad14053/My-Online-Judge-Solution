@@ -3,8 +3,8 @@ using namespace std ;
 
 int main ()
 {
-    int t, i , k ,h1,m1 ,x ,h2,m2,m3,y ,j ,min ,z;
-    char ch ,ch2  ;
+    int t, i, k,h1,m1,x,h2,m2,m3,y,j,min,z;
+    char ch,ch2  ;
 
     cin>>t ;
     for (i=1 ; i<=t ; i++)

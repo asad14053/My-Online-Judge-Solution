@@ -17,7 +17,7 @@ bool flag[1003][1003];
 int dist[1003][1003];
 int main()
 {
-   // freopen("in.txt","r",stdin);
+    // freopen("in.txt","r",stdin);
     int r,c,j,l,i,num,rr,n,sx,sy,fx,fy;
 
     while(scanf("%d %d",&r,&c)==2)
@@ -72,4 +72,4 @@ int main()
         printf("%d\n",dist[fx][fy]);
     }
     return 0;
-}N
+} N

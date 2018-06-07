@@ -5,13 +5,13 @@ double U,P,I;
 string s;
 void check(int i)
 {
-   // cout<<s[i]<<endl;
+    // cout<<s[i]<<endl;
     double V;
     string temp;
     int j;
     for(j=i+2; !(isalpha(s[j])); j++)
         temp+=s[j];
-        //  cout<<temp<<endl;
+    //  cout<<temp<<endl;
     stringstream ss(temp);
     ss>>V;
     if (s[j] == 'm') V *= 0.001;
@@ -44,7 +44,8 @@ int main()
         // string s;
         getchar();
         for(int i=0; i<n; i++)
-        {   isP=isU=isI=false;
+        {
+            isP=isU=isI=false;
             printf("Problem #%d\n", i+1);
             getline(cin,s);
             int u=s.find_first_of("=");

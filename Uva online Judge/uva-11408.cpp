@@ -6,9 +6,9 @@ ll ans[MAX+3],m[MAX+3];
 bool a[MAX+3];
 void p()
 {
- memset(ans,false,sizeof(ans));
+    memset(ans,false,sizeof(ans));
     memset(a,true,sizeof(a));
-   memset(m,false,sizeof(m));
+    memset(m,false,sizeof(m));
     a[0]=a[1]=false;
     for(ll i=2; i<=(MAX); i++)
     {
@@ -22,19 +22,20 @@ void p()
             }
         }
     }
-   for(ll i=2; i<=(MAX); i++)
-    ans[i]=ans[i-1]+(a[m[i]]);
+    for(ll i=2; i<=(MAX); i++)
+        ans[i]=ans[i-1]+(a[m[i]]);
     //  for(ll i=2; i<=21; i++)
-     //   cout<<ans[i]<<endl;
+    //   cout<<ans[i]<<endl;
 }
 int main(int argc, char const *argv[])
 {
     p();
     ll a,b;
     while(1)
-    {cin>>a;
-    if(!a) break;
-    cin>>b;
+    {
+        cin>>a;
+        if(!a) break;
+        cin>>b;
         cout<<ans[b]-ans[a-1]<<endl;
     }
     return 0;

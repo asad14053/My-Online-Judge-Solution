@@ -4,9 +4,11 @@ int flag;
 
 void call (int x, int i)
 {
-    if ( x != 0 ) {
+    if ( x != 0 )
+    {
 
-        if ( flag == 0 ) { // first print
+        if ( flag == 0 )   // first print
+        {
             flag = 1;
             if ( x == -1 && i != 0 )
                 printf("-");
@@ -22,10 +24,13 @@ void call (int x, int i)
 
         }
 
-        else { // others
-            if ( x < 0 ) {
+        else   // others
+        {
+            if ( x < 0 )
+            {
                 printf (" - ");
-                if ( x != -1 || i == 0) {
+                if ( x != -1 || i == 0)
+                {
                     x *= -1;
                     printf ("%d", x);
                 }
@@ -37,7 +42,8 @@ void call (int x, int i)
                     printf("x^%d", i);
             }
 
-            else {
+            else
+            {
                 printf(" + ");
                 if ( x != 1 || i == 0 )
                     printf("%d", x);
@@ -61,7 +67,8 @@ int main ()
 {
     int x [10];
 
-    while ( scanf ("%d", &x [0]) != EOF ) {
+    while ( scanf ("%d", &x [0]) != EOF )
+    {
 
         int i;
         for ( i = 1; i < 9; i++ )
@@ -69,7 +76,7 @@ int main ()
         flag = 0;
 
         for ( i = 0; i < 9; i++ )
-                call ( x [i], 8 - i );
+            call ( x [i], 8 - i );
 
         if ( flag == 0 )
             printf("0");

@@ -11,7 +11,8 @@ int main()
         cin>>n;
         getchar();
         for (int i = 0; i < n; i++)
-            cin>>s[i];cin>>sq;
+            cin>>s[i];
+        cin>>sq;
         printf("Case %d:\n", ++cases);
 
         for (int i = 0; i < n; i++)

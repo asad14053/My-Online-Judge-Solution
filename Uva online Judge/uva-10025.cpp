@@ -13,20 +13,21 @@ int main()
         if(k<0)k*=-1;
         n=ceil((-1 + sqrtl(1+8*k))/2);
         if(k==0) r=3;
-        else{
-        if((n*(n+1)/2)==k)
-            r=n;
         else
         {
-            while(((n*(n+1))/2-k)%2!=0)
-                n++;
-            r=n;
+            if((n*(n+1)/2)==k)
+                r=n;
+            else
+            {
+                while(((n*(n+1))/2-k)%2!=0)
+                    n++;
+                r=n;
+            }
+
+
         }
-
-
-    }
-    //cout<<endl;
-    if(c) cout<<endl;
+        //cout<<endl;
+        if(c) cout<<endl;
         c=true;
         cout<<r<<endl;
     }

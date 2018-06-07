@@ -4,12 +4,12 @@
 
 int main()
 {
-double n;
+    double n;
 
-while(scanf("%lf",&n)==1)
-{
-printf("%.10lf\n",(n*sin(108*pi/90)/sin(63*pi/90)));
-}
+    while(scanf("%lf",&n)==1)
+    {
+        printf("%.10lf\n",(n*sin(108*pi/90)/sin(63*pi/90)));
+    }
 
-return 0;
+    return 0;
 }

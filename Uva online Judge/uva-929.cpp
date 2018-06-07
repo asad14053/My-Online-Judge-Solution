@@ -41,7 +41,7 @@ void dijkstra()
         q.pop();
         int x=top.x;
         int y=top.y;
-      //  int c=top.c;
+        //  int c=top.c;
         //   printf("%d %d %d\n",x,y,c);
         if(flag[x][y])continue;
         flag[x][y]=1;
@@ -66,7 +66,7 @@ void dijkstra()
 int main()
 {
 
- //   freopen("in.txt","r",stdin);
+//   freopen("in.txt","r",stdin);
     int tt,i,j,l,c;
     cin>>tt;
     while(tt--)
@@ -76,7 +76,7 @@ int main()
         {
             for(j=1; j<=n; j++)
             {
-               cin>>c;
+                cin>>c;
                 dist[i][j]=c;
             }
         }

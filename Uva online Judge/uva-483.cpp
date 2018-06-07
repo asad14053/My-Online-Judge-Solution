@@ -4,12 +4,12 @@ using namespace std;
 int main()
 {
 
-     string n ;
+    string n ;
     while(cin>>(n)!='\0')
     {
         char c=getchar();
 
-        for(int i=n.size()-1;i>=0;i--)
+        for(int i=n.size()-1; i>=0; i--)
         {
             cout<<n[i];
         }

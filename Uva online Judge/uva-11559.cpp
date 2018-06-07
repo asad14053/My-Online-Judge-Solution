@@ -2,24 +2,24 @@
 using namespace std;
 int main()
 {
-string s;
-char ch;
-int n,b,h,w,p,x;
-while(cin>>n>>b>>h>>w)
-{
-    int mn=1e9;
-    for(int i=0; i<h; i++)
+    string s;
+    char ch;
+    int n,b,h,w,p,x;
+    while(cin>>n>>b>>h>>w)
     {
-        cin>>p;
-        for(int j=0; j<w; j++)
+        int mn=1e9;
+        for(int i=0; i<h; i++)
         {
-            cin>>x;
-            if(x>=n)
-                mn = min(mn, n*p);
+            cin>>p;
+            for(int j=0; j<w; j++)
+            {
+                cin>>x;
+                if(x>=n)
+                    mn = min(mn, n*p);
+            }
         }
+        if(mn>b)     cout<<"stay home\n";
+        else cout<<mn<<"\n";
     }
-    if(mn>b)     cout<<"stay home\n";
-    else cout<<mn<<"\n";
-}
-return 0;
+    return 0;
 }

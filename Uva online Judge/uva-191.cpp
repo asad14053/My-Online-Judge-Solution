@@ -3,11 +3,13 @@
 
 using namespace std;
 
-int area(int x1, int y1, int x2, int y2, int x3, int y3){
+int area(int x1, int y1, int x2, int y2, int x3, int y3)
+{
     return x1*y2+x2*y3+x3*y1-y1*x2-y2*x3-y3*x1;
 }
 
-bool intersection(int &x1, int &y1, int &x2, int &y2, int &x3, int &y3, int &x4, int &y4){
+bool intersection(int &x1, int &y1, int &x2, int &y2, int &x3, int &y3, int &x4, int &y4)
+{
     int a1,a2,a3,a4;
 
     a1=area(x1,y1,x3,y3,x2,y2);
@@ -23,14 +25,16 @@ bool intersection(int &x1, int &y1, int &x2, int &y2, int &x3, int &y3, int &x4,
     return false;
 }
 
-int main(){
+int main()
+{
     int T;
     int xstart,ystart,xend,yend,xleft,ytop,xright,ybottom;
     bool intersect;
 
     scanf("%d",&T);
 
-    for(int caso=1;caso<=T;caso++){
+    for(int caso=1; caso<=T; caso++)
+    {
         intersect=false;
 
         scanf("%d %d %d %d %d %d %d %d",&xstart,&ystart,&xend,&yend,&xleft,&ytop,&xright,&ybottom);

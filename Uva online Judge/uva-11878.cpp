@@ -9,12 +9,12 @@ int main()
         if(sine=='+')
         {
             if(a+b==atoi(c))
-            count++;
+                count++;
         }
         else if(sine=='-')
         {
             if(a-b==atoi(c))
-            count++;
+                count++;
         }
     }
     printf("%d\n",count);

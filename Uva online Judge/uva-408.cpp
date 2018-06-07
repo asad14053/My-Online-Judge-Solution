@@ -4,7 +4,7 @@
 using namespace std;
 int main()
 {
-    long int n,i,j ,seed,pre ,arr[100001],step,mod,l,cou;
+    long int n,i,j,seed,pre,arr[100001],step,mod,l,cou;
     while(scanf("%ld %ld",&step,&mod )==2)
     {
         seed =0;

@@ -1,4 +1,4 @@
- #include<bits/stdc++.h>
+#include<bits/stdc++.h>
 using namespace std;
 char input [100];
 map <string, bool> visited;

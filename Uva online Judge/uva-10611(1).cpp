@@ -107,8 +107,8 @@ int main()
             cin>>t;
             a=UB(v,t);
             b=LB(v,t);
-         //   bug(b);
-          //  bug(a);
+            //   bug(b);
+            //  bug(a);
             z=v.size();
             if(b==0 and a)
                 cout<<"X"<<" "<<v[a]<<endl;
@@ -117,16 +117,16 @@ int main()
             else
             {
                 if(a==b)
-                cout<<v[b-1]<<" "<<v[a]<<endl;
+                    cout<<v[b-1]<<" "<<v[a]<<endl;
                 else
-                cout<<v[b-1]<<" "<<v[a]<<endl;
+                    cout<<v[b-1]<<" "<<v[a]<<endl;
             }
 
         }
     }
 
 
-return 0;
+    return 0;
 }
 
 

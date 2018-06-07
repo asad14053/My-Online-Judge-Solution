@@ -17,8 +17,8 @@ int main()
         for(int i=0; i<l; i++)
             if(a[i]>='a'and a[i]<='z')
                 c[m++]=a[i];//cout<<"-----"<<m<<endl;
-                strcpy(g,c);//cout<<"-----"<<strlen(g)<<endl;
-                strrev(c);
+        strcpy(g,c);//cout<<"-----"<<strlen(g)<<endl;
+        strrev(c);
         strcpy(f,c);
         if((sqrt(m)==(int)sqrt(m))and !strcmp(f,g))
             cout<<"Case #"<<++k<<":\n"<<sqrt(m)<<endl;

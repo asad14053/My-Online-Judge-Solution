@@ -14,7 +14,7 @@ int main()
         {
             s=ch[j]-'0';
             m = (m*10 + s)%a;
-          //  cout<<m<<endl;
+            //  cout<<m<<endl;
         }
         printf("%llu\n",m);
         memset(ch,'\0',sizeof(ch));

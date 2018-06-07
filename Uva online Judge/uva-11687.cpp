@@ -13,7 +13,7 @@ int main()
             if(x == 1 && s[0] == '1')
                 break;
             sprintf(s, "%d", x);
-      //  cout<<x<<" "<<last<<endl;
+            //  cout<<x<<" "<<last<<endl;
             last = x, x = strlen(s);
             idx++;
             if(last == x)

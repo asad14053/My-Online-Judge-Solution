@@ -116,19 +116,19 @@ int main()
         {
             if(a>=1 and b<=n)
             {
-            cout<<"Sheet "<<i<<", front: ";
-            if(a>n) cout<<("Blank");
-            else cout<<a;
-            cout<<", "<<b<<endl;
-            a--,b++;
+                cout<<"Sheet "<<i<<", front: ";
+                if(a>n) cout<<("Blank");
+                else cout<<a;
+                cout<<", "<<b<<endl;
+                a--,b++;
             }
             if(a>=1 and b<=n)
             {
-            cout<<"Sheet "<<i<<", back : "<<b<<", ";
-            if(a>n)cout<<"Blank";
-            else cout<<a;
-            cout<<endl;
-            a--,b++;
+                cout<<"Sheet "<<i<<", back : "<<b<<", ";
+                if(a>n)cout<<"Blank";
+                else cout<<a;
+                cout<<endl;
+                a--,b++;
             }
         }
     }

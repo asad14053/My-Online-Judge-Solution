@@ -36,7 +36,7 @@ int main()
 
 
 
-    printf("Case %lld: A = %lld, limit = %lld, number of terms = %lld\n",++z,a,b,c);
+        printf("Case %lld: A = %lld, limit = %lld, number of terms = %lld\n",++z,a,b,c);
     }
     return 0;
 }

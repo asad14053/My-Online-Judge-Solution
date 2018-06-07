@@ -7,16 +7,16 @@ int main()
     long int i,b,c,j;
     while(scanf("%s",a)==1)
     {
-         if(a[0]=='0'&&strlen(a)==1) break;
+        if(a[0]=='0'&&strlen(a)==1) break;
 
         b=0;
         c=0;
-        for(i=0;i<strlen(a);i+=2)
+        for(i=0; i<strlen(a); i+=2)
         {
 
             b+=(a[i]-'0');
         }
-        for(j=1;j<strlen(a);j+=2)
+        for(j=1; j<strlen(a); j+=2)
         {
             c+=(a[j]-'0');
         }

@@ -119,7 +119,7 @@ ll p(ll n)
         return 0;
     if(mpp.find(n)!=mpp.end())
         return mpp[n];
-     x=n/2;
+    x=n/2;
     if(n%2)
         mpp[n]=2*p(x)+x+1;
     else mpp[n]=p(x)+p(x-1)+x;
@@ -141,7 +141,7 @@ int main()
     //char c;
     while(cin>>a>>b,a,b)
     {
-       cout<<"Case "<<c++<<": "<<p(b)-p(a-1)<<endl;
+        cout<<"Case "<<c++<<": "<<p(b)-p(a-1)<<endl;
     }
 //    end = clock();
 //    time_spent = (double)(end - begin) / CLOCKS_PER_SEC;

@@ -11,12 +11,12 @@ int main()
         while(ss>>c)
         {
             int x=0;
-            for(int j=0;j<c.size();j++)
-            if(isalpha(c[j]))
-                x++;
+            for(int j=0; j<c.size(); j++)
+                if(isalpha(c[j]))
+                    x++;
             i+=(x>0);
         }
-            cout<<i<<endl;
+        cout<<i<<endl;
 
     }
     return 0;

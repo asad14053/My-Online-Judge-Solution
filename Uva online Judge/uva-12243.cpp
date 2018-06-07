@@ -1,4 +1,4 @@
- #include<bits/stdc++.h>
+#include<bits/stdc++.h>
 using namespace std;
 int main()
 {
@@ -7,34 +7,36 @@ int main()
     while(gets(s))
     {
         if(strcmp(s,"*")==0)
-        break;
+            break;
         int p=0,k=0;
-        for(int i=0;s[i]!='\0';i++)
+        for(int i=0; s[i]!='\0'; i++)
         {
             if(s[i]>='A'&&s[i]<='Z')
-            s[i]=s[i]+32;
+                s[i]=s[i]+32;
             if(s[i]==' ')
-            p++;
+                p++;
         }
         c=s[0];
         int f=0;
-         for(int i=0;s[i]!='\0';i++)
-         {
-             if(s[i]==' ')
-             {
-                 if(c==s[i+1])
-                 k++;
-             }
+        for(int i=0; s[i]!='\0'; i++)
+        {
+            if(s[i]==' ')
+            {
+                if(c==s[i+1])
+                    k++;
+            }
 
-         }
-         if(p==k){
-         printf("Y\n");
+        }
+        if(p==k)
+        {
+            printf("Y\n");
 
-         }
-         else{
-         printf("N\n");
+        }
+        else
+        {
+            printf("N\n");
 
-         }
+        }
     }
     return 0;
 }

@@ -22,5 +22,5 @@ int main ()
         for(int i = 0; i <output.size (); i++ ) printf (" %d", output [i]);
         cout<<endl;
     }
-return 0;
+    return 0;
 }

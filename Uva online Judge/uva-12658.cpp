@@ -6,7 +6,7 @@ int main()
     int n ;
     while(cin>>n )
     {
-       for(int i=0;i<5;i++) cin >> s[i];
+        for(int i=0; i<5; i++) cin >> s[i];
         for(int i = 0; i<4*n; i+=4)
         {
             if(s[0][i]=='.') cout << 1;

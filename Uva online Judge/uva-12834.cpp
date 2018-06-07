@@ -4,7 +4,7 @@ typedef long long ll;
 ll A[131072];
 int main()
 {
-    int t , c  = 0;
+    int t, c  = 0;
     int n, m;
     ll x;
     cin>>t;

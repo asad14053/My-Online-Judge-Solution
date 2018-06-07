@@ -1,5 +1,5 @@
- #include<bits/stdc++.h>
- using namespace std;
+#include<bits/stdc++.h>
+using namespace std;
 int main()
 {
     string rom[6] = {"i","v","x","l","c"};

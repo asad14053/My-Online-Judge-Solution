@@ -14,10 +14,11 @@ int main()
         {
             int c=0;
             cin>>s;
-            int l=s.size();set<int>a;
+            int l=s.size();
+            set<int>a;
             memset(b,0,sizeof(b));
             for(int i=0; i<l; i++)
-               b[s[i]-96] ++;
+                b[s[i]-96] ++;
             // cout<<b[s[i]-96]<<endl;
 
             for(int j=0; j<140; j++)
@@ -26,12 +27,12 @@ int main()
                 {
                     a.insert(b[j]);
                     c++;
-                  //  cout<<c<<endl;
+                    //  cout<<c<<endl;
                 }
             }
             if(a.size()==c and a.size()!=1)
                 ++cnt;
-           // cout<<cnt<<endl;
+            // cout<<cnt<<endl;
 
         }
         cout<<"Case "<<++i<<": "<<cnt<<endl;

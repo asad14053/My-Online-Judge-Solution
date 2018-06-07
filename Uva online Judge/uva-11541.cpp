@@ -21,32 +21,32 @@ int main()
     char s[1000],c;
     sc("%d",&t);
     getchar();
-    for(k=1;k<=t;k++)
+    for(k=1; k<=t; k++)
     {
-      gets(s);
-      int l=strlen(s);
-      pf("Case %d: ",++no);
-      for(int i=0;i<l;i++)
-      {
-          int p=0;
-                if(s[i]>='A'&&s[i]<='Z')
-                 c=s[i];
-                else if(s[i]>='0'&&s[i]<='9')
+        gets(s);
+        int l=strlen(s);
+        pf("Case %d: ",++no);
+        for(int i=0; i<l; i++)
+        {
+            int p=0;
+            if(s[i]>='A'&&s[i]<='Z')
+                c=s[i];
+            else if(s[i]>='0'&&s[i]<='9')
+            {
+                p+=s[i]-'0';
+                i++;
+                while(s[i]>='0'&&s[i]<='9')
                 {
-                    p+=s[i]-'0';
+                    p=p*10+s[i]-'0';
                     i++;
-                    while(s[i]>='0'&&s[i]<='9')
-                    {
-                        p=p*10+s[i]-'0';
-                        i++;
-                    }
-                    --i;
-                    for(int j=0;j<p;j++)
-                    pf("%c",c);
                 }
+                --i;
+                for(int j=0; j<p; j++)
+                    pf("%c",c);
+            }
         }
         pf("\n");
-      }
+    }
 
     return 0;
 }

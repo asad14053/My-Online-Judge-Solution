@@ -121,19 +121,19 @@ ll n;
 bool can(ll p)
 {
 
-   while(true)
-   {
-       p*=9;
-       if(p>=n)
-       {
-           return true;
-       }
-       p*=2;
-       if(p>=n)
-       {
-           return false;
-       }
-   }
+    while(true)
+    {
+        p*=9;
+        if(p>=n)
+        {
+            return true;
+        }
+        p*=2;
+        if(p>=n)
+        {
+            return false;
+        }
+    }
 }
 int main()
 {

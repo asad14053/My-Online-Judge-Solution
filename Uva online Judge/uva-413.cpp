@@ -4,7 +4,7 @@ int main()
     int i,j,k,l,ar[500],N,U,D,cU,cD;
     int fU,fD,uO,dO,h;
     double rU,rD;
-   // freopen("in413.txt","r",stdin);
+    // freopen("in413.txt","r",stdin);
     while(scanf("%d",&ar[0])==1&&ar[0]!=0)
     {
         i=1;

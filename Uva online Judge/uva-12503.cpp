@@ -10,7 +10,7 @@ int main()
         {
             scanf("%d",&n);
             s=0;
-            for(i=1;i<=n;i++)
+            for(i=1; i<=n; i++)
             {
                 scanf("%s",a);
                 if(strcmp(a,"LEFT")==0)
@@ -33,7 +33,7 @@ int main()
             printf("%d\n",s);
         }
     }
-return 0;
+    return 0;
 }
 
 

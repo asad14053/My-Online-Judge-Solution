@@ -5,10 +5,10 @@ int main()
     string str;
     while (getline(cin,str))
     {
-      int  len = str.size();
+        int  len = str.size();
         reverse(str.begin(), str.end());
 
-       int n = 0;
+        int n = 0;
         if ( (str[0] -48) >= 0 && str[0]-48 <= 9)
         {
             for (int i = 0; str[i]; ++i)

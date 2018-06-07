@@ -3,21 +3,21 @@ using namespace std;
 int k(vector<int>a)
 {
     int mxs=0,sfs=0;
-        for(int i=0;i<a.size();i++)
+    for(int i=0; i<a.size(); i++)
+    {
+        if(sfs+a[i]>mxs)
         {
-            if(sfs+a[i]>mxs)
-            {
-                sfs+=a[i];
-                mxs=sfs;
-            }
-            else if(sfs+a[i]>0)
-                sfs+=a[i];
-            else
-            {
-                sfs=0;
-            }
+            sfs+=a[i];
+            mxs=sfs;
         }
-     return mxs;
+        else if(sfs+a[i]>0)
+            sfs+=a[i];
+        else
+        {
+            sfs=0;
+        }
+    }
+    return mxs;
 }
 
 int main()

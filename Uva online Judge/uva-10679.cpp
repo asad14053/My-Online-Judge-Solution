@@ -13,28 +13,28 @@ int main()
         while(n--)
         {
             cin>>a;
-        int d=0,s=0,i=0;
-        for(int j=d; j<b.size(); j++)
-        {
-            if(a[i]==b[j])
+            int d=0,s=0,i=0;
+            for(int j=d; j<b.size(); j++)
             {
-                s+=1;
-                d=j+1;
-                i++;
-                continue;
+                if(a[i]==b[j])
+                {
+                    s+=1;
+                    d=j+1;
+                    i++;
+                    continue;
+                }
+                else
+                {
+                    if(s==a.size())
+                        break;
+                    s=0;
+                    i=0;
+                }
             }
-            else
-            {
-                if(s==a.size())
-                    break;
-                s=0;
-                i=0;
-            }
-        }
-       // cout<<s<<endl;
-        if(s==a.size())
-            cout<<"y"<<endl;
-        else cout<<"n"<<endl;
+            // cout<<s<<endl;
+            if(s==a.size())
+                cout<<"y"<<endl;
+            else cout<<"n"<<endl;
         }
     }
     return 0;

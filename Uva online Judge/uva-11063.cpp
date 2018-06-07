@@ -20,31 +20,31 @@ int main()
                     i=n;
                 }
             }
-                if(flag)
-                {
-                    map<int,int>mp;
-                    mp.clear();
-                    for(int i=0; i<n; i++)
-                        for(int j=i; j<n; j++)
+            if(flag)
+            {
+                map<int,int>mp;
+                mp.clear();
+                for(int i=0; i<n; i++)
+                    for(int j=i; j<n; j++)
+                    {
+                        if(mp[a[i]+a[j]]==1)
                         {
-                            if(mp[a[i]+a[j]]==1)
-                            {
-                                flag=false;
-                                i=j=n;
-                            }
-                            else
-                                mp[a[i]+a[j]]=1;
-
+                            flag=false;
+                            i=j=n;
                         }
-                    if(flag)
-                        cout<<"Case #"<<++k<<": It is a B2-Sequence."<<endl<<endl;
-                    else  cout<<"Case #"<<++k<<": It is not a B2-Sequence."<<endl<<endl;
-                }
+                        else
+                            mp[a[i]+a[j]]=1;
+
+                    }
+                if(flag)
+                    cout<<"Case #"<<++k<<": It is a B2-Sequence."<<endl<<endl;
                 else  cout<<"Case #"<<++k<<": It is not a B2-Sequence."<<endl<<endl;
-
-
             }
+            else  cout<<"Case #"<<++k<<": It is not a B2-Sequence."<<endl<<endl;
+
+
         }
+    }
 
 
 

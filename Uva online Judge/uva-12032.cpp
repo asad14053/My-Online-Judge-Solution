@@ -1,4 +1,4 @@
- #include<bits/stdc++.h>
+#include<bits/stdc++.h>
 using namespace std;
 int arr [100000 + 10];
 int main ()

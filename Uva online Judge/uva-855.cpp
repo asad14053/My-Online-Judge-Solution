@@ -8,7 +8,7 @@ int main()
     while(t--)
     {
         cin>>s>>a>>f;
-        for(int i=0;i<f;i++)
+        for(int i=0; i<f; i++)
             cin>>street[i]>>avenue[i];
 
         sort(street,street+f);

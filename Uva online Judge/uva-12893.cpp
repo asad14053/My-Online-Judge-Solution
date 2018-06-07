@@ -1,14 +1,15 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-int main() {
+int main()
+{
 
-	long long t,n;
-	cin>>t;
-	while (t--)
+    long long t,n;
+    cin>>t;
+    while (t--)
     {
         cin>>n;
-		printf("%d\n", (int)__builtin_popcountll(n));
+        printf("%d\n", (int)__builtin_popcountll(n));
     }
-	return 0;
+    return 0;
 }

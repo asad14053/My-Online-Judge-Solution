@@ -12,4 +12,4 @@ int main()
         cout<<der[n-1]<<"/"<<fac[n-1]<<endl;
     }
     return 0;
-    }
+}

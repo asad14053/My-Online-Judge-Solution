@@ -11,18 +11,18 @@ int main()
         cin>>a>>b;
         int f=0;
         ll x[a+2];
-        for(int i=0;i<a;i++)
+        for(int i=0; i<a; i++)
             cin>>x[i];
-            sort(x,x+a);
-            ll s=0;
-            for(int i=0;i<a;i++)
-            {
-                s+=x[i];
-                if(s<b)
-                    f++;
-                else break;
-            }
-            cout<<f<<endl;
+        sort(x,x+a);
+        ll s=0;
+        for(int i=0; i<a; i++)
+        {
+            s+=x[i];
+            if(s<b)
+                f++;
+            else break;
+        }
+        cout<<f<<endl;
     }
     return 0;
 }

@@ -66,7 +66,7 @@ int main(void)
             }
         }
 
-     printf("Case %d: %0004d-%s-%02d\n",k,y,months[m-1].c_str(),d);
+        printf("Case %d: %0004d-%s-%02d\n",k,y,months[m-1].c_str(),d);
     }
 
     return 0;

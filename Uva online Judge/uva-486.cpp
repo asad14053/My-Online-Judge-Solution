@@ -11,7 +11,7 @@ int main()
         long long million=0,thousand=0,hundred=0,tmp=0;
         while(ss>>s)
         {
-            for(int i=0;i<28;i++)
+            for(int i=0; i<28; i++)
                 if(s==word[i])
                 {
                     tmp+=number[i];
@@ -45,5 +45,5 @@ int main()
         }
         cout<<million+thousand+tmp<<endl;
     }
-return 0;
+    return 0;
 }

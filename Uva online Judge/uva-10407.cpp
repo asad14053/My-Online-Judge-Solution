@@ -4,13 +4,14 @@ using namespace std;
 
 int gcd(int a,int b)
 {
-   return b?gcd(b,a%b):a;
+    return b?gcd(b,a%b):a;
 }
 
 
 int main()
 {
-    int a,b,x[max],i,num,j,m,d[max];  int n=0;
+    int a,b,x[max],i,num,j,m,d[max];
+    int n=0;
 
     while(scanf("%d",&x[n])==1&&x[n])
     {

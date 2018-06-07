@@ -30,13 +30,13 @@ int main()
             cout << "no-theorem\n";
             continue;
         }
-        for(int i=0 ;i< iM;i++)
-        if (S[i] == '?') ++q1;
-         for(int i=iM+1 ;i< iE;i++)
-       // FOI(i, iM+1, iE-1)
-        if (S[i] == '?') ++q2;
-        for(int i= iE+1;i< L;i++)
-        if (S[i] == '?') ++q3;
+        for(int i=0 ; i< iM; i++)
+            if (S[i] == '?') ++q1;
+        for(int i=iM+1 ; i< iE; i++)
+            // FOI(i, iM+1, iE-1)
+            if (S[i] == '?') ++q2;
+        for(int i= iE+1; i< L; i++)
+            if (S[i] == '?') ++q3;
 
         if (q1 > 0 && q2 > 0 && q3 > 1 && q2 == q3 - q1)
             cout << "theorem\n";

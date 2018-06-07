@@ -10,11 +10,11 @@ int main()
         s=max(s,m);
         k++;
     }
-  //  cout<<s<<" "<<k<<endl;
+    //  cout<<s<<" "<<k<<endl;
     for(int i=0; i<k; i++)
         a[i].resize(s,' ');
     //for(int i=0; i<k; i++)
-     //   cout<<a[i].size()<<endl;
+    //   cout<<a[i].size()<<endl;
     for(int i=0; i<s; i++)
     {
         for(int j=k-1; j>=0; j--)

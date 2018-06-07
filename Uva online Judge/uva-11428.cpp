@@ -2,10 +2,11 @@
 using namespace std;
 int main()
 {
-   long int n, i, j,k,d,c;
+    long int n, i, j,k,d,c;
 
     while (scanf("%ld", &d)==1)
-    {   if(d==0)
+    {
+        if(d==0)
             break;
         c=0;
         for(i=1; i<60; i++)
@@ -19,11 +20,11 @@ int main()
                 }
             }
             if(c==1)
-            break;
+                break;
         }
-       if(c==1) printf("%d %d\n",i, j);
-       else
-        printf("No solution\n");
+        if(c==1) printf("%d %d\n",i, j);
+        else
+            printf("No solution\n");
     }
     return 0;
 }

@@ -43,7 +43,7 @@ int main()
         if(m!=0)printf("\n");
         m=1;
         if(in1>in2)
-         swap(in1,in2);
+            swap(in1,in2);
         for(i=in1; i<=in2; i++)
         {
             if(happy[i])printf("%llu %llu\n",i,happy[i]);

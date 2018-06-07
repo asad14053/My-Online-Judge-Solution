@@ -5,16 +5,16 @@ int main()
     int n;
     while(cin>>n)
     {
-       // getchar();
+        // getchar();
         string a[106];
         string c;
         int k=0;
-        for(int i=1;i<=n;i++)
+        for(int i=1; i<=n; i++)
         {
             cin>>a[i];
-           // cout<<a[i];
+            // cout<<a[i];
         }
-       // cout<<" ======= "<<a<<endl;
+        // cout<<" ======= "<<a<<endl;
         int m;
         cin>>m;
         while(m--)
@@ -36,18 +36,18 @@ int main()
                 if(p>n) r=0x3f3f3f;
                 l++,r++;
                 if(l==r)
-                cout<<"middle of "<<a[x-l]<<" and "<<a[x+r]<<endl;
+                    cout<<"middle of "<<a[x-l]<<" and "<<a[x+r]<<endl;
                 else if(l<r)
                 {
-                    for(int j=0;j<l;j++)
+                    for(int j=0; j<l; j++)
                         printf("right of ");
-                        cout<<a[x-l]<<endl;
+                    cout<<a[x-l]<<endl;
                 }
                 else
                 {
-                    for(int j=0;j<r;j++)
+                    for(int j=0; j<r; j++)
                         printf("left of ");
-                        cout<<a[x+r]<<endl;
+                    cout<<a[x+r]<<endl;
                 }
             }
         }

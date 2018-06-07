@@ -4,7 +4,8 @@ int main()
 {
     long long a,b,c;
     while(cin>>a>>b>>c)
-    {   if(!a && !b && !c)  break;
+    {
+        if(!a && !b && !c)  break;
         c=c%5;
         if(c==0)
             cout<<a<<endl;
@@ -17,5 +18,5 @@ int main()
         else if(c==4)
             cout<<(a+1)/b<<endl;
     }
-return 0;
+    return 0;
 }

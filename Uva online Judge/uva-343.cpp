@@ -24,7 +24,8 @@ char second [100];
 
 void reset ()
 {
-    for ( int i = 0; i < 36 + 3; i++ ) {
+    for ( int i = 0; i < 36 + 3; i++ )
+    {
         firstInTen [i] = -1;
         secondInTen [i] = -2;
     }
@@ -45,16 +46,19 @@ void convetToTen (char *a, int *save)
     int len = strlen (a);
     int startBase = 0;
 
-    for ( int i = 0; a [i]; i++ ) {
+    for ( int i = 0; a [i]; i++ )
+    {
         if ( !isdigit (a [i]) ) equivalent = a [i] - 55;
         else equivalent = a [i] - 48;
         startBase = max (startBase, equivalent);
     }
 
-    for ( int i = startBase + 1; i <= 36; i++ ){
+    for ( int i = startBase + 1; i <= 36; i++ )
+    {
         int sum = 0;
 
-        for ( int j = len - 1; j >= 0; j-- ) {
+        for ( int j = len - 1; j >= 0; j-- )
+        {
             if ( !isdigit (a [j]) ) equivalent = a [j] - 55;
             else equivalent = a [j] - 48;
 
@@ -67,9 +71,12 @@ void convetToTen (char *a, int *save)
 
 bool isSame ()
 {
-    for ( int i = 2; i <= 36; i++ ) {
-        for ( int j = 2; j <= 36; j++ ) {
-            if ( firstInTen [i] == secondInTen [j] ) {
+    for ( int i = 2; i <= 36; i++ )
+    {
+        for ( int j = 2; j <= 36; j++ )
+        {
+            if ( firstInTen [i] == secondInTen [j] )
+            {
                 printf ("%s (base %i) = %s (base %i)\n", first, i, second, j);
                 return true;
             }
@@ -83,7 +90,8 @@ int main ()
 {
     char input [1000];
 
-    while ( gets (input) ) {
+    while ( gets (input) )
+    {
         reset ();
         sscanf (input, "%s %s", first, second);
 

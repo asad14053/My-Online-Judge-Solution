@@ -2,7 +2,8 @@
 #include <math.h>
 #define DEN (Y4-Y3)*(X2-X1) - (X4-X3)*(Y2-Y1)
 
-int fraction(double Ax, double Ay, double Bx, double By, double &Px, double &Py) {
+int fraction(double Ax, double Ay, double Bx, double By, double &Px, double &Py)
+{
 
     double Ka=1, Kb=2;
 
@@ -12,7 +13,8 @@ int fraction(double Ax, double Ay, double Bx, double By, double &Px, double &Py)
     return 0;
 }
 
-int intersection(double &X, double &Y, double X1, double X2, double X3, double X4, double Y1, double Y2, double Y3, double Y4) {
+int intersection(double &X, double &Y, double X1, double X2, double X3, double X4, double Y1, double Y2, double Y3, double Y4)
+{
     double UA;
     double UB;
 
@@ -25,11 +27,13 @@ int intersection(double &X, double &Y, double X1, double X2, double X3, double X
     return 0;
 }
 
-int length(double X1,double X2,double Y1,double Y2,double &len) {
+int length(double X1,double X2,double Y1,double Y2,double &len)
+{
     len = sqrt(pow(X1-X2,2) + pow(Y1-Y2,2));
 }
 
-int main() {
+int main()
+{
 
     /*freopen("11437_in.txt","r",stdin);*/
 
@@ -41,7 +45,8 @@ int main() {
 
     scanf("%d",&n);
 
-    while (n--) {
+    while (n--)
+    {
 
         scanf("%lf %lf",&Ax,&Ay);
         scanf("%lf %lf",&Bx,&By);

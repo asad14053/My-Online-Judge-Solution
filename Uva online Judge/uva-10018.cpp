@@ -4,7 +4,7 @@ int main()
     long long n,i,m,a,b,c,d,sum;
     scanf("%lld",&n);
 
-    for(i=1;i<=n;i++)
+    for(i=1; i<=n; i++)
     {
         scanf("%lld",&m);
         sum=0;
@@ -24,8 +24,8 @@ int main()
             if(sum!=m)
             {
 
-            m=sum+m;
-            c++;
+                m=sum+m;
+                c++;
 
             }
             else

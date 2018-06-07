@@ -99,7 +99,7 @@ using namespace std;
 int p[5001],r[5001];
 int find(int r)
 {
-   return (p[r]==r)?  r:p[r]=find(p[r]);
+    return (p[r]==r)?  r:p[r]=find(p[r]);
 }
 int ans=0;
 int join(int x,int y)
@@ -110,39 +110,39 @@ int join(int x,int y)
     {
         p[u]=v;
         r[v]+=r[u];
-       // ans=max(ans,r[u]);
+        // ans=max(ans,r[u]);
     }
 }
 int main()
 {
-   // freopen("c123.txt","w",stdout);
+    // freopen("c123.txt","w",stdout);
     int n,m;
     while(cin>>n>>m and n)
     {
         ans=0;
         memset(p,false,sizeof(p));
         memset(r,false,sizeof(r));
-        map<string ,int >mp;
+        map<string,int >mp;
         string s,t;
-        for(int i=0;i<n;i++)
+        for(int i=0; i<n; i++)
         {
             cin>>s;
             mp[s]=i;
             r[i]=1;
             p[i]=i;
         }
-        for(int k=0;k<m;k++)
+        for(int k=0; k<m; k++)
         {
             cin>>s>>t;
             int u=mp[s];
             int v=mp[t];
             join(u,v);
         }
-         int ans = 0;
+        int ans = 0;
         for(int i = 0; i < n; i++)
             if(r[i] > ans)
                 ans = r[i];
-      //  printf("%d\n", ans);
+        //  printf("%d\n", ans);
         cout<<ans<<endl;
     }
 

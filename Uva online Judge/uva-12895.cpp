@@ -25,7 +25,7 @@ int main()
             hold = hold / 10;
             i++;
         }
-        for(total =0, j =0;j<i;j++)
+        for(total =0, j =0; j<i; j++)
         {
             total = total + (li) pow(digits[j],i);
         }

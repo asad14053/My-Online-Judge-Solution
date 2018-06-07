@@ -14,9 +14,9 @@ int prime(long long int n)
     if(n%3==0) return 0;
     else
     {
-    for(i=5;i<=sqrt(n);i++)
-        if(n%i==0)return 0;
-    return 1;
+        for(i=5; i<=sqrt(n); i++)
+            if(n%i==0)return 0;
+        return 1;
     }
 }
 int rev (long long int n)

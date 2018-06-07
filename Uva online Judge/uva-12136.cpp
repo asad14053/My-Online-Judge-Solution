@@ -15,7 +15,7 @@ int main()
 
         printf("Case %d: ",k++);
         if(e>c || a>g)
-        cout<<"Hits Meeting";
+            cout<<"Hits Meeting";
         else cout<<"Mrs Meeting";
         printf("\n");
     }

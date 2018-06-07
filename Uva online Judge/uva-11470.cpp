@@ -4,7 +4,7 @@ using namespace std;
 int mat[MAX][MAX],color[MAX][MAX];
 int main()
 {
-    int n,i,j,sum ,cas=0,m;
+    int n,i,j,sum,cas=0,m;
     while(cin>>m&&m)
     {
         cas++;

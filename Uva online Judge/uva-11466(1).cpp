@@ -20,7 +20,7 @@ void sieve()
 
     prime[1]=prime[0]=true;
     int m=0;
-    for(int k=2;k<=Max;k++)
+    for(int k=2; k<=Max; k++)
     {
         if(prime[k]==false)
             p[m++]=k;

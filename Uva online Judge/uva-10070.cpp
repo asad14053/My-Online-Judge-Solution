@@ -11,7 +11,7 @@ int main()
             printf("\n");
         count++;
         l=strlen(y);
-        for (i=0;i<l;i++)
+        for (i=0; i<l; i++)
         {
             m4=(m4*10+y[i]-'0')%4;
             m55=(m55*10+y[i]-'0')%55;

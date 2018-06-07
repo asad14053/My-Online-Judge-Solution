@@ -12,19 +12,19 @@ int main()
         l=ss.length();
         x=1;
         cnt=0;
-        for(i=0;i<l;i++)
+        for(i=0; i<l; i++)
         {
 
             if(ss[i]=='O')
             {
-             cnt+=x;
-             if(i+1<l && ss[i+1]=='O')
+                cnt+=x;
+                if(i+1<l && ss[i+1]=='O')
                     x++;
-             else x=1;
+                else x=1;
             }
 
         }
         cout<<cnt<<endl;
     }
-return 0;
+    return 0;
 }

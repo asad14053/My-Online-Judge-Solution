@@ -20,7 +20,7 @@ int main()
                     {
                         n /= i;
                     }
-                   // cout<<n<<" "<<i<<endl;
+                    // cout<<n<<" "<<i<<endl;
                 }
             }
             if(n != 1)

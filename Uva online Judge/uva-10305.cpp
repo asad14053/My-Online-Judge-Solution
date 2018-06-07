@@ -9,7 +9,7 @@ void dfs(int n)
 {
     color[n]=1;
     int i;
-    for(i=0;i<vcc[n].size();i++)
+    for(i=0; i<vcc[n].size(); i++)
     {
         if(color[vcc[n][i]]==0)
         {
@@ -25,7 +25,7 @@ int main()
     while(scanf("%d %d",&node,&edge)==2)
     {
         if(node==0 && edge==0)
-        break;
+            break;
         memset(color,0,sizeof(color));
         for(i=0; i<MAX; i++)
         {
@@ -37,18 +37,18 @@ int main()
             scanf("%d %d",&n,&m);
             vcc[n].push_back(m);
         }
-        for(i=1;i<=node;i++)
+        for(i=1; i<=node; i++)
         {
-           if(color[i]==0)
-           {
-               dfs(i);
-           }
+            if(color[i]==0)
+            {
+                dfs(i);
+            }
         }
         int len = collect.size();
         printf("%d",collect[len-1]);
-        for(i=len-2;i>=0;i--)
+        for(i=len-2; i>=0; i--)
         {
-           printf(" %d",collect[i]);
+            printf(" %d",collect[i]);
         }
         printf("\n");
     }

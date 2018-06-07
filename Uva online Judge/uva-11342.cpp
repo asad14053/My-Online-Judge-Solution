@@ -27,7 +27,7 @@ int main()
     {
         cin>>n;
         if(a[n][3])
-        cout<<a[n][0]<<" "<<a[n][1]<<" "<<a[n][2]<<endl;
+            cout<<a[n][0]<<" "<<a[n][1]<<" "<<a[n][2]<<endl;
         else cout<<-1<<endl;
     }
     return 0;

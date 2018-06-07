@@ -7,7 +7,7 @@ bool visited[100];
 
 void unreachable(int v)
 {
-    memset(visited,false ,sizeof(visited));
+    memset(visited,false,sizeof(visited));
 
     queue<int> Q;
     Q.push(v);

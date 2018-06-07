@@ -10,21 +10,21 @@ int main()
         string a;
         string b;
         getchar();
-        for(int i=0;i<n;i++)
+        for(int i=0; i<n; i++)
+        {
+            cin>>a;
+            getline(cin,b);
+            if(mp[a])
+                mp[a]++;
+            else
             {
-                cin>>a;
-                getline(cin,b);
-                if(mp[a])
-                    mp[a]++;
-                else
-                {
-                    mp[a]++;
-                    s.push_back(a);
-                }
+                mp[a]++;
+                s.push_back(a);
             }
-            sort(s.begin(),s.end());
-            for(int i=0;i<s.size();i++)
-                cout<<s[i]<<" "<<mp[s[i]]<<endl;
+        }
+        sort(s.begin(),s.end());
+        for(int i=0; i<s.size(); i++)
+            cout<<s[i]<<" "<<mp[s[i]]<<endl;
     }
     return 0;
 }

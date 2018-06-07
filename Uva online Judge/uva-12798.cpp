@@ -4,7 +4,7 @@ int G[107];
 int main()
 {
     // FI ;
-    int N , M ;
+    int N, M ;
     while( cin>>N>>M )
     {
         memset(G,0,sizeof(G));
@@ -18,7 +18,7 @@ int main()
             }
         }
         int Ans = 0 ;
-       for( int i=0 ; i<N; i++ ) Ans += ( G[i] == M );
+        for( int i=0 ; i<N; i++ ) Ans += ( G[i] == M );
         cout<<Ans<<endl;
     }
 }

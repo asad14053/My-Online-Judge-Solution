@@ -9,9 +9,10 @@ int main()
         int c=1;
         while(1)
         {
-        if((x-y)>=a) break;
-        c++;
-        x+=b;y+=a;
+            if((x-y)>=a) break;
+            c++;
+            x+=b;
+            y+=a;
         }
         cout<<c<<endl;
 

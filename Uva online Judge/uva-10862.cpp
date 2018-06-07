@@ -33,8 +33,8 @@ int main()
         {
             if(fbn[2*n][i]!=0)break;
         }
-       // cout<<i<<endl;
-       // printf("The Fibonacci number for %d is ",n);
+        // cout<<i<<endl;
+        // printf("The Fibonacci number for %d is ",n);
         for(; i>=0; i--)  cout<<fbn[2*n][i];
         cout<<endl;
     }

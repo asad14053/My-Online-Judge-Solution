@@ -29,21 +29,22 @@ int main()
         if(n*n <= 9)
         {
             for(i = 0; i < n; i++)
-                  {for(j = 0; j < n; j++)
+            {
+                for(j = 0; j < n; j++)
 
-                        printf("%2d ", map[i][j]);
-                        cout<<endl;
-                    }
+                    printf("%2d ", map[i][j]);
+                cout<<endl;
+            }
         }
         else if(n*n >= 10 && n*n <= 100)
         {
             for(i = 0; i < n; i++)
-               {
+            {
 
                 for(j = 0; j < n; j++)
                     printf("%3d ", map[i][j]);
-                    cout<<endl;
-               }
+                cout<<endl;
+            }
         }
         else
         {

@@ -20,22 +20,22 @@ int main()
             on[u]=true;
             on[v]=true;
         }
-        for(int k=0;k<105;k++)
-            for(int i=0;i<105;i++)
-            for(int j=0;j<105;j++)
-            ad[i][j]=min(ad[i][j],ad[i][k]+ad[k][j]);
-            double s=0,ss=0;
-        for(int i=0;i<105;i++)
-            for(int j=0;j<105;j++)
-        {
-            if(i==j) continue;
-            if(on[i] and on[j])
+        for(int k=0; k<105; k++)
+            for(int i=0; i<105; i++)
+                for(int j=0; j<105; j++)
+                    ad[i][j]=min(ad[i][j],ad[i][k]+ad[k][j]);
+        double s=0,ss=0;
+        for(int i=0; i<105; i++)
+            for(int j=0; j<105; j++)
             {
-                s+=ad[i][j];
-                ss++;
-            }
+                if(i==j) continue;
+                if(on[i] and on[j])
+                {
+                    s+=ad[i][j];
+                    ss++;
+                }
 
-        }
+            }
         cout.precision(4);
         printf("Case %d: average length between pages = %.3lf clicks\n",c++,s/ss);
 

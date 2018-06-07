@@ -9,7 +9,7 @@ int main()
     {
         cin>>n;
         ll b=0;
-        for(int i=0;i<n;i++)
+        for(int i=0; i<n; i++)
         {
             cin>>a;
             b=max(a,b);

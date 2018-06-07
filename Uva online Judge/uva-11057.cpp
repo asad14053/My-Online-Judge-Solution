@@ -22,8 +22,8 @@ int main()
                     if(a[i]>=a[j])
                         if((a[i]-a[j])<d)
                         {
-                             b=a[j];
-                             c=a[i];
+                            b=a[j];
+                            c=a[i];
                             d=a[i]-a[j];
                             //cout<<"   b"<<b<<"   c "<<c<<endl;
                         }

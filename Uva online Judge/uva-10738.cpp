@@ -29,31 +29,31 @@ int main(int args,char const*argv[])
     pr();
     ll n;
 
-        mu[1]=M[1]=1;
-        for(ll i=2; i<=mx; i++)
+    mu[1]=M[1]=1;
+    for(ll i=2; i<=mx; i++)
+    {
+        ll m=i,cnt=0;
+        for(ll j=0; j<m,p[j]*p[j]<=m; j++)
         {
-            ll m=i,cnt=0;
-            for(ll j=0; j<m,p[j]*p[j]<=m; j++)
+            if(m%p[j]==0)
             {
-                if(m%p[j]==0)
+                cnt++;
+                if( m/p[j]%p[j]==0)
                 {
-                    cnt++;
-                    if( m/p[j]%p[j]==0)
-                    {
-                        cnt=-100;
-                        break;
-                    }
-                    m/=p[j];
+                    cnt=-100;
+                    break;
                 }
+                m/=p[j];
             }
-            if(m != 1)  cnt++;
-            if(cnt < 0) mu[i] = 0;
-            else if(cnt&1)  mu[i] = -1;
-            else    mu[i] = 1;
-            M[i] = M[i-1] + mu[i];
         }
+        if(m != 1)  cnt++;
+        if(cnt < 0) mu[i] = 0;
+        else if(cnt&1)  mu[i] = -1;
+        else    mu[i] = 1;
+        M[i] = M[i-1] + mu[i];
+    }
     //ll n;
     while(cin>>n,n)
-    cout<<setw(8)<<n<<setw(8)<<mu[n]<<setw(8)<<M[n]<<endl;
+        cout<<setw(8)<<n<<setw(8)<<mu[n]<<setw(8)<<M[n]<<endl;
     return 0;
 }

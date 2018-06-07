@@ -6,20 +6,20 @@ int main()
     while(gets(a))
     {
 
-        for(i=0;i<strlen(a);i++)
+        for(i=0; i<strlen(a); i++)
         {
             if(a[i]=='"')
-               {
-                   c++;
-                   if(c%2==1)
-                     printf("``");
-                   else
-                     printf("''");
-               }
+            {
+                c++;
+                if(c%2==1)
+                    printf("``");
+                else
+                    printf("''");
+            }
             else  printf("%c",a[i]);
 
         }
-         printf("\n");
+        printf("\n");
     }
     return 0;
 }

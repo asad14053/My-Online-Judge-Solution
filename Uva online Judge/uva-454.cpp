@@ -2,8 +2,8 @@
 using namespace std;
 int main()
 {
-   // freopen("input.txt","r",stdin);
-   // freopen("output.txt","w",stdout);
+    // freopen("input.txt","r",stdin);
+    // freopen("output.txt","w",stdout);
     string s,x,m,l;
     int n;
     cin>>n;
@@ -18,7 +18,8 @@ int main()
         {
             if(x=="")
                 break;
-            s=""; v.push_back(x);
+            s="";
+            v.push_back(x);
             stringstream ss(x);
             while(ss>>l)
                 s+=l;

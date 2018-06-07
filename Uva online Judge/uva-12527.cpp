@@ -3,11 +3,12 @@ using namespace std;
 
 int main()
 {
-    int a,b,l;int ar[1000];
+    int a,b,l;
+    int ar[1000];
     while(cin>>a>>b)
     {
         int sum=0;
-        for(int i=a;i<=b;i++)
+        for(int i=a; i<=b; i++)
         {
             int m=i,c=0;
             l=0;
@@ -16,9 +17,9 @@ int main()
                 ar[l++]=m%10;
                 m/=10;
             }
-            for(int j=0;j<l-1;j++)
+            for(int j=0; j<l-1; j++)
             {
-                for(int k=j+1;k<l;k++)
+                for(int k=j+1; k<l; k++)
                 {
                     if(ar[j]==ar[k])
                     {
@@ -27,7 +28,8 @@ int main()
                     }
 
 
-                }if(c) break;
+                }
+                if(c) break;
             }
             if(!c) sum++;
         }

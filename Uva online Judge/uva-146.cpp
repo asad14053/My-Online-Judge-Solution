@@ -6,12 +6,12 @@ int main()
     while(gets(s))
     {
         if(s[0]=='#')
-        break;
+            break;
         int l=strlen(s);
         if(next_permutation(s,s+l))
-        puts(s);
+            puts(s);
         else
-        printf("No Successor\n");
+            printf("No Successor\n");
 
     }
     return 0;

@@ -4,7 +4,7 @@ int main()
 {
     long t,n;
     cin>>t;
-    for(int i=1;i<=t;i++)
+    for(int i=1; i<=t; i++)
     {
         long ans=0;
         cin>>n;

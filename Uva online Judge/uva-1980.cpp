@@ -3,17 +3,18 @@ using namespace std;
 long long p(long long n)
 {
     long long s=1;
-    for(int i=1;i<=n;i++)
+    for(int i=1; i<=n; i++)
         s*=i;
     return s;
 }
 int main()
 {
-   // p();
+    // p();
     int n;
     string a;
     while(cin>>a)
-    {if(a=="0") break;
+    {
+        if(a=="0") break;
         int l=a.size();
 
         cout<<p(l)<<endl;

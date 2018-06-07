@@ -14,7 +14,7 @@ int main()
             gets(ar[i]);
             if(i==0)printf("Case %d:\n",b);
             l=strlen(ar[i]);
-            for(j=0; j<l;++j)
+            for(j=0; j<l; ++j)
             {
                 if(ar[i][j]==' ')
                 {

@@ -129,26 +129,26 @@ int main()
     cin>>t;
     while(t--)
     {
-          cin>>x>>y;
-          ll z=(sqrt(x));
-          vll v;
-              ll sm=0;
-          for(ll i=1;i<=z;i++)
-          {
-              if(x%i==0)
-              {
-                  a=x/i;
-                  if(i%y!=0)
-                  sm+=(i);
-                  if((a)%y!=0 and i!=a)
-                  sm+=(a);
-                 // bug1(i,x/i);
-              }
+        cin>>x>>y;
+        ll z=(sqrt(x));
+        vll v;
+        ll sm=0;
+        for(ll i=1; i<=z; i++)
+        {
+            if(x%i==0)
+            {
+                a=x/i;
+                if(i%y!=0)
+                    sm+=(i);
+                if((a)%y!=0 and i!=a)
+                    sm+=(a);
+                // bug1(i,x/i);
+            }
 
-          }
+        }
 
 
-          cout<<sm<<endl;
+        cout<<sm<<endl;
 
     }
 //    end = clock();

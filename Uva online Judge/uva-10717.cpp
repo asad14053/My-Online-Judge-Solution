@@ -16,14 +16,14 @@ int main()
         ll lcm=1;
         cin>>lcm;
         ll temp;
-        for(int i=0;i<n;i++)
+        for(int i=0; i<n; i++)
         {
             cin>>temp;
             temp=temp/gcd(lcm,temp);
             lcm*=temp;
             cout<<"------"<<lcm<<endl;
         }
-        for(int i=0;i<t;i++)
+        for(int i=0; i<t; i++)
         {
             cin>>temp;
             if(temp%lcm==0) cout<<temp<<"-"<<temp<<endl;
@@ -36,5 +36,5 @@ int main()
         }
     }
 
-  return 0;
+    return 0;
 }

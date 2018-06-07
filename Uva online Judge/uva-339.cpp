@@ -4,16 +4,17 @@ vector<int>g[1000];
 int bfs(int s,int n)
 {
     queue<int>q;
-    int vis[100]={0},lev[100]={0},par[100];
+    int vis[100]= {0},lev[100]= {0},par[100];
     q.push(s);
     vis[s]=1;
     lev[s]=0;
     par[s]=-1;
     while(!q.empty())
     {
-                   // cout<<"---------"<<endl;
-        int u=q.front();        q.pop();
-        for(int i=0;i<g[u].size();i++)
+        // cout<<"---------"<<endl;
+        int u=q.front();
+        q.pop();
+        for(int i=0; i<g[u].size(); i++)
         {
             int v=g[u][i];
             if(!vis[v])
@@ -23,15 +24,15 @@ int bfs(int s,int n)
                 par[v]=u;
                 q.push(v);
             }
-                        //cout<<"---------"<<endl;
+            //cout<<"---------"<<endl;
 
         }
 
     }
-    for(int i=1;i<=n;i++)
+    for(int i=1; i<=n; i++)
     {
         cout<<s<< "to"<<i<<" "<<" source: "<<par[i]<<"  level "<<lev[i]<<endl;
-                  cout<<"---------"<<endl;
+        cout<<"---------"<<endl;
     }
     return 0;
 }
@@ -42,7 +43,7 @@ int main ()
     while(t--)
     {
         cin>>n>>e;
-        for(int i=0;i<e;i++)
+        for(int i=0; i<e; i++)
         {
             cin>>x>>y;
             g[x].push_back(y);

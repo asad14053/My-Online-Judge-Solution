@@ -10,15 +10,15 @@ int main()
     scanf("%d",&n);
     while(n--)
     {
-       cin>>name;
-       scanf("%d %d %d",&d,&m,&y);
-       a=d+m*31+y*12*31;
-       mp[a]=name;
-       pq1.push(a);
-       pq2.push(-a);
+        cin>>name;
+        scanf("%d %d %d",&d,&m,&y);
+        a=d+m*31+y*12*31;
+        mp[a]=name;
+        pq1.push(a);
+        pq2.push(-a);
     }
-        cout<<""<<mp[pq1.top()]<<endl;
-        cout<<""<<mp[-pq2.top()]<<endl;
+    cout<<""<<mp[pq1.top()]<<endl;
+    cout<<""<<mp[-pq2.top()]<<endl;
     return 0;
 }
 

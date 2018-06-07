@@ -98,25 +98,25 @@ using namespace std;
 #define MOD 1000000007
 int main()
 {
-    #ifndef ONLINE_JUDGE
+#ifndef ONLINE_JUDGE
     //input();
     //output();
-    #endif
+#endif
     fast();
 //    clock_t begin, end;
 //    double time_spent;
 //    begin = clock();
     ll n,t,a,b,x,y,q,z;
     cin>>t;
-    for(int l=1;l<=t;l++)
+    for(int l=1; l<=t; l++)
     {
-       // bug(t);
+        // bug(t);
         cin>>n;
         cin>>q;
         fr(k,0,q)
         {
             x=0;
-            for(ll i=1;i<=(2*n-1);i++)
+            for(ll i=1; i<=(2*n-1); i++)
             {
                 if(i>n) x--;
                 else x++;
@@ -126,7 +126,7 @@ int main()
                     break;
                 cout<<endl;
             }
-               cout<<endl;
+            cout<<endl;
 
         }
 
@@ -137,7 +137,7 @@ int main()
 //    time_spent = (double)(end - begin) / CLOCKS_PER_SEC;
 //    cout<<"Time spent = "<<time_spent<<endl;
 
-return 0;
+    return 0;
 }
 
 

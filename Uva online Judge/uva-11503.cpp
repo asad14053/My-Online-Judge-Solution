@@ -122,10 +122,10 @@ int dsu(string a,string b)
 }
 int main()
 {
-    #ifndef ONLINE_JUDGE
+#ifndef ONLINE_JUDGE
     //input();
     //output();
-    #endif
+#endif
     fast();
 //    clock_t begin, end;
 //    double time_spent;
@@ -150,7 +150,7 @@ int main()
 //    time_spent = (double)(end - begin) / CLOCKS_PER_SEC;
 //    cout<<"Time spent = "<<time_spent<<endl;
 
-return 0;
+    return 0;
 }
 
 

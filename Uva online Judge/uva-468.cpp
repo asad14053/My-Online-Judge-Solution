@@ -26,21 +26,21 @@ int main()
         if(y>1)cout<<endl;
         y=3;
         map<int,int>word1,word2;
-        for(i=0;i<130;i++)
+        for(i=0; i<130; i++)
             num1[i]=num2[i]=num3[i]=0;
-        for(i=0;i<s1.length();i++)
+        for(i=0; i<s1.length(); i++)
             num1[s1[i]]++;
-        for(i=0;i<130;i++)
+        for(i=0; i<130; i++)
             word1[num1[i]]=i;
-        for(i=0;i<s2.length();i++)
+        for(i=0; i<s2.length(); i++)
             num2[s2[i]]++;
-        for(i=0;i<130;i++)
+        for(i=0; i<130; i++)
             word2[num2[i]]=i;
         qsort(num1,130,sizeof(int),com);
         qsort(num2,130,sizeof(int),com);
-        for(i=0;i<130;i++)
+        for(i=0; i<130; i++)
         {
-           // printf("%d %d\n",num1[i],num2[i]);
+            // printf("%d %d\n",num1[i],num2[i]);
             if(num2[i]>0)
             {
                 n=word2[num2[i]];
@@ -49,7 +49,7 @@ int main()
             }
             else break;
         }
-        for(i=0;i<s2.length();i++)
+        for(i=0; i<s2.length(); i++)
         {
             n=s2[i];
             cout<<(char)num3[n];

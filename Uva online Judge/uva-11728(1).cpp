@@ -2,13 +2,13 @@
 #include <math.h>
 int main()
 {
-    int n1,n2, s, i , j, k, t=1, f=0,p[100]={0};
+    int n1,n2, s, i, j, k, t=1, f=0,p[100]= {0};
 
     while(scanf("%d", &n1)==1)
     {
         if(n1==0)
             break;
-        for(n2=n1, f=0; n2>=1 ;n2--)
+        for(n2=n1, f=0; n2>=1 ; n2--)
         {
             for(i=1, s=0; i<=sqrt(n2); i++)
             {
@@ -28,7 +28,7 @@ int main()
             }
         }
         if(f==0)
-              printf("Case %d: -1\n", t);
+            printf("Case %d: -1\n", t);
 
         t++;
     }

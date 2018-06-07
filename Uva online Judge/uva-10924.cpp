@@ -12,9 +12,9 @@ int main()
         while(a[i]!='\0')
         {
             if(isupper(a[i]))
-            s+=a[i]-38;
+                s+=a[i]-38;
             else
-               s+=a[i]-96;
+                s+=a[i]-96;
             i++;
         }
         for(j=2; j<=sqrt(s); j++)
@@ -25,5 +25,6 @@ int main()
         c==0?cout<<"It is a prime word.":cout<<"It is not a prime word.";
         cout<<endl;
 
-    } return 0;
+    }
+    return 0;
 }

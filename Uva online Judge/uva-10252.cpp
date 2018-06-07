@@ -9,8 +9,6 @@ int main()
     {
         sort(a.begin(), a.end());
         sort(b.begin(), b.end());
-
-
         for(int i = 0, j = 0;;)
         {
             if(i >= a.size() || j >= b.size()) break;

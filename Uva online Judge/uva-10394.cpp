@@ -17,19 +17,19 @@ void sieve()
             twins[tw++] = k;
         k=i;
         for(j = i*i ; j<=M ; j+=i)
-        prime[j] = true;
+            prime[j] = true;
 
     }
 }
 int main()
 {
 
-int a;
-sieve();
+    int a;
+    sieve();
     while(cin>>a)
     {
-    printf("(%lld, %lld)\n",twins[a],twins[a]+2);
+        printf("(%lld, %lld)\n",twins[a],twins[a]+2);
     }
 
-return 0;
+    return 0;
 }

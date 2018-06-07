@@ -22,11 +22,11 @@ int main()
         int cnt[26]= {0};
         for(j=0; j<l; j++)
             cnt[w[j]-65]++;
-         sum=1;
+        sum=1;
         for(j=0; j<26; j++)
             if(cnt[j]>1)
                 sum*=n[cnt[j]];
-               // cout<<sum<<" "<<l<<endl;
+        // cout<<sum<<" "<<l<<endl;
         printf("Data set %d: %.0lf\n",i,n[l]/sum);
     }
     return 0;

@@ -1,4 +1,4 @@
- #include<bits/stdc++.h>
+#include<bits/stdc++.h>
 using namespace std;
 int a[10001],b[10001];
 int main()
@@ -10,23 +10,24 @@ int main()
     {
         if(n==0&&q==0) break;
 
-        for(i=0;i<n;i++)scanf("%d",&a[i]);
-        for(i=0;i<q;i++)scanf("%d",&b[i]);
+        for(i=0; i<n; i++)scanf("%d",&a[i]);
+        for(i=0; i<q; i++)scanf("%d",&b[i]);
 
         sort(a,a+n);
 
         printf("CASE# %d:\n",++l);
 
-        for(i=0;i<q;i++)
-        {k=0;
-            for(j=0;j<n;j++)
+        for(i=0; i<q; i++)
+        {
+            k=0;
+            for(j=0; j<n; j++)
             {
                 if(b[i]==a[j])
                 {
 
-                   k=1;
-                   l=j;
-                   break;
+                    k=1;
+                    l=j;
+                    break;
 
                 }
             }

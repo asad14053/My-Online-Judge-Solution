@@ -10,7 +10,7 @@ int main()
     {
         s=0;
 
-        for(i=0;i<strlen(a);i++)
+        for(i=0; i<strlen(a); i++)
         {
             c=a[i]-'0';
             s+=c*(pow(2,strlen(a)-i)-1);

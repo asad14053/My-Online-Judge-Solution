@@ -37,15 +37,15 @@ int main()
     string sum="0",s,a,b,t;
     while(cin>>s>>t,s!="0" and t!="0")
     {
-       // if(s=="0") break;
+        // if(s=="0") break;
         reverse(s.begin(),s.end());
         reverse(t.begin(),t.end());
         sum=add(s,t);
         reverse(sum.begin(),sum.end());
-   for(int i=0;i<sum.size();i++)
-    if(sum[i]!='0')
-    cout<<sum[i];
-   cout<<endl;
+        for(int i=0; i<sum.size(); i++)
+            if(sum[i]!='0')
+                cout<<sum[i];
+        cout<<endl;
     }
     return 0;
 }

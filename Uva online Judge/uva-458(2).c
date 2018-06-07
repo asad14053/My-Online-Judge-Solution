@@ -6,10 +6,10 @@ int main()
     int i,c;
     while(gets(n))
     {
-       c=strlen(n);
-       for(i=0;i<c;i++)
-        printf("%c",n[i]-7);
-       printf("\n");
+        c=strlen(n);
+        for(i=0; i<c; i++)
+            printf("%c",n[i]-7);
+        printf("\n");
     }
     return 0;
 }

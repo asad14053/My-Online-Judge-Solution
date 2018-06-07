@@ -10,11 +10,11 @@ int main()
     {
         c=0;
         cin>>s;
-        for(int i=0;i<s.size();i++)
-        if(isalpha(s[i]))
-        {
-            if(s[0]==s[i])c++;
-        }
+        for(int i=0; i<s.size(); i++)
+            if(isalpha(s[i]))
+            {
+                if(s[0]==s[i])c++;
+            }
         cout<<c-1<<endl;
     }
     return 0;

@@ -6,19 +6,19 @@ int main()
     int n;
     while(scanf("%lld",&n)==1)
     {
-    for(int i=1; i<=n; i++)
-    {
-        scanf("%%",a,b);
-        if(strlen(a)!=strlen(b))  cout<<"No"<<"\n";
-        else
+        for(int i=1; i<=n; i++)
         {
-           if(a[0]==b[0])
-            cout<<"Yes"<<"\n";
-           else
-               cout<<"No"<<"\n";
+            scanf("%%",a,b);
+            if(strlen(a)!=strlen(b))  cout<<"No"<<"\n";
+            else
+            {
+                if(a[0]==b[0])
+                    cout<<"Yes"<<"\n";
+                else
+                    cout<<"No"<<"\n";
+            }
         }
     }
-    }
 
-return 0;
+    return 0;
 }

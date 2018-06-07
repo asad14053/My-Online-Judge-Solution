@@ -5,9 +5,11 @@ using namespace std;
 
 long long t, n;
 
-int main() {
+int main()
+{
     scanf("%lld", &t);
-    while(t--) {
+    while(t--)
+    {
         scanf("%lld", &n);
         n *= 567;
         n /= 9;

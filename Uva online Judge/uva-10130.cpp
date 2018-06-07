@@ -46,5 +46,5 @@ int main()
         }
         cout<<W<<endl;
     }
-return 0;
+    return 0;
 }

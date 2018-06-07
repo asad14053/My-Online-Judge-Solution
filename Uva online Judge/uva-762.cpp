@@ -13,7 +13,7 @@ bool bfs(string src,string des,map< string,vector<string> >Graph)
     {
         string u=Q.front();
         if(u==des) return true;
-        for(int i=0;i<Graph[u].size();i++)
+        for(int i=0; i<Graph[u].size(); i++)
         {
             string v=Graph[u][i];
             if(!visited[v])

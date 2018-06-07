@@ -7,10 +7,10 @@ int p()
 {
     memset(a,true,sizeof(a));
     a[0]=a[1]=false;
-    for(ll i=2;i<=sqrt(mx);i++)
+    for(ll i=2; i<=sqrt(mx); i++)
         if(a[i])
-        for(ll j=i*i;j<mx;j+=i)
-        a[j]=false;
+            for(ll j=i*i; j<mx; j+=i)
+                a[j]=false;
 }
 int main()
 {
@@ -20,17 +20,17 @@ int main()
     {
         while(t--)
         {
-           cin>>m;
-           for(ll i=2;i<(int)m;i++)
-           {
-               //cout<<
-               if(a[i])
-                if(2*i>m)
-               {
-                   cout<<i<<endl;
-                   break;
-               }
-           }
+            cin>>m;
+            for(ll i=2; i<(int)m; i++)
+            {
+                //cout<<
+                if(a[i])
+                    if(2*i>m)
+                    {
+                        cout<<i<<endl;
+                        break;
+                    }
+            }
         }
     }
     return 0;

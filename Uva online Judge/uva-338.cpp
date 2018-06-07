@@ -37,7 +37,7 @@ int main()
         {
             if(strt==0 && ttl==0)
                 break;
-                cnt=0;
+            cnt=0;
             memset(dis,-1,sizeof(dis));
             st=m[strt];
             // printf("start %d\n",strt);
@@ -47,7 +47,7 @@ int main()
             // printf("\n");
             for(i=1; i<=c; i++)
             {
-               // printf("%d ",dis[i]);
+                // printf("%d ",dis[i]);
                 if(dis[i]>ttl || dis[i]==-1)
                     cnt++;
 

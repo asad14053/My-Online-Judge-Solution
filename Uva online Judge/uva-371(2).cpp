@@ -10,8 +10,8 @@ int main()
             break;
         if(a>b)
             swap(a,b);
-            x=0;
-        for(i=b;i>=a;i--)
+        x=0;
+        for(i=b; i>=a; i--)
         {
             p=i;
             c=1;
@@ -21,15 +21,16 @@ int main()
                 p=3*p+1;
             while(p!=1)
             {
-               if(p%2==0)
-                {p=p/2;
-                c++;
+                if(p%2==0)
+                {
+                    p=p/2;
+                    c++;
                 }
-            else
-            {
-                p=3*p+1;
-                c++;
-            }
+                else
+                {
+                    p=3*p+1;
+                    c++;
+                }
             }
             if(c>=x)
             {

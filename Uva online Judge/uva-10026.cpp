@@ -16,10 +16,11 @@ int main()
     while(t--)
     {
         int n;
-        cin>>n;vector<job>j;
+        cin>>n;
+        vector<job>j;
         job e;
 
-        for(int i=0;i<n;i++)
+        for(int i=0; i<n; i++)
         {
             cin>>e.t>>e.f;
             e.id=i+1;
@@ -27,7 +28,7 @@ int main()
         }
         sort(j.begin(),j.end(),cmp);
         cout<<j[0].id;
-        for(int i=1;i<n;i++)
+        for(int i=1; i<n; i++)
             cout<<" "<<j[i].id;
         cout<<endl;
         if(t)

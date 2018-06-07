@@ -6,5 +6,5 @@ int main()
     while(cin>>n && n)
         cout<<"1/2"<<endl;
 
-return 0;
+    return 0;
 }

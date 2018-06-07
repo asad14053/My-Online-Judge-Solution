@@ -150,15 +150,15 @@ int main ()
             }
         }
 
-       ll mx = 0;
-       ll z=0;
+        ll mx = 0;
+        ll z=0;
 
         fr(i,1,n+1)
         {
             if ( mx < d [t] [i] )
             {
                 mx = d [t] [i];
-               // bug(d [t] [i]);
+                // bug(d [t] [i]);
                 z = i;
             }
         }

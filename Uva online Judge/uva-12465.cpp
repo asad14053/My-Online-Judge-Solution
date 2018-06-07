@@ -14,7 +14,8 @@ int main()
             int cnt = 0;
             while(c%i == 0)
             {
-                c /= i; cnt++;
+                c /= i;
+                cnt++;
             }
             ans *= cnt+1;
         }

@@ -11,7 +11,8 @@ int main(void)
         int seconds, v;
         getchar();
         if(sscanf(line, "%d:%d:%d %d", &h, &m, &s, &v) == 4)
-        {   seconds = 3600 * h + 60 * m + s;
+        {
+            seconds = 3600 * h + 60 * m + s;
             d += (seconds - vc) * speed / 3600;
             vc = seconds;
             speed = v;

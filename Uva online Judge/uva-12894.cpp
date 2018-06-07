@@ -1,10 +1,12 @@
 #include<stdio.h>
 
-int main(){
+int main()
+{
     register unsigned n;
     scanf("%u", &n);
 
-    while (n--){
+    while (n--)
+    {
         int x0, y0, x1, y1, cx, cy, r;
         scanf("%u%u%u%u%u%u%u", &x0, &y0, &x1, &y1, &cx, &cy, &r);
 

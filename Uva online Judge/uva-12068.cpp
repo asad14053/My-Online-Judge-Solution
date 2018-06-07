@@ -23,20 +23,20 @@ long long int G(long long int a,long long int b)
 }
 int main()
 {
-    long long int a,b,c,d,x,t ,N,i,j,lcm,num_of_set[102],mul,div,sum;
+    long long int a,b,c,d,x,t,N,i,j,lcm,num_of_set[102],mul,div,sum;
     scanf("%lld",&t );
-    for(x=1;x<=t ;x++)
+    for(x=1; x<=t ; x++)
     {
         cnt=0;
         scanf("%lld",&N);
         lcm=1;
-        for(i=0;i<N;i++)
+        for(i=0; i<N; i++)
         {
             scanf("%lld",&num_of_set[i]);
             lcm=G(lcm,num_of_set[i]);
         }
         sum=0;
-        for(i=0;i<N;i++)
+        for(i=0; i<N; i++)
         {
             div=lcm/num_of_set[i];
             mul=div*1;

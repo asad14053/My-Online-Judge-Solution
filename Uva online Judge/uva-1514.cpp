@@ -3,7 +3,7 @@ using namespace std;
 int main()
 {
     int n, m, i, j, r1, r2, r3, r4;
-    while (cin >> n >> m ,n,m)
+    while (cin >> n >> m,n,m)
     {
         int current, solved[n], solutions[m];
         r1 = r2 =r3 =r4 = 1;

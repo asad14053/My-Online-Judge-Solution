@@ -13,12 +13,12 @@ int main()
         //cout<<"--   -"<<s<<endl;
         c++;
         long m=a-(s*s);
-       // cout<<"---"<<m<<endl;
+        // cout<<"---"<<m<<endl;
         if(m>0)
         {
             while(m!=0)
             {
-               // cout<<"==="<<endl;
+                // cout<<"==="<<endl;
                 long j=(int)sqrt(m);
                 m-=j*j;
                 c++;

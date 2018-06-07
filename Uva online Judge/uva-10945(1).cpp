@@ -98,10 +98,10 @@ using namespace std;
 #define MOD 1000000007
 int main()
 {
-    #ifndef ONLINE_JUDGE
+#ifndef ONLINE_JUDGE
     //input();
     //output();
-    #endif
+#endif
     fast();
 //    clock_t begin, end;
 //    double time_spent;
@@ -110,12 +110,12 @@ int main()
     string s,s1,s2;
     while(getline(cin,s) and s!="DONE")
     {
-     s1="",s2="";
+        s1="",s2="";
         fr(i,0,s.size())
         if(isalpha(s[i]))
             s1+=tolower(s[i]);
         s2=s1;
-       // bug(s1);
+        // bug(s1);
         reverse(all(s1));
         if(s1==s2)
             cout<<"You won't be eaten!"<<endl;
@@ -126,7 +126,7 @@ int main()
 //    time_spent = (double)(end - begin) / CLOCKS_PER_SEC;
 //    cout<<"Time spent = "<<time_spent<<endl;
 
-return 0;
+    return 0;
 }
 
 

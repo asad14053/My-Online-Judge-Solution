@@ -14,8 +14,8 @@ int main()
             tc++;
         }
         if(tc==10)
-        break;
+            break;
         x++;
     }
-return 0;
+    return 0;
 }

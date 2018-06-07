@@ -8,13 +8,13 @@ int main()
     scanf("%d",&t);
     while(t--)
     {
-       r=0;
-       scanf("%lf",&n);
-       r=n/5;
-       h=(n*6)/10;
-       r=acos(-1)*r*r;
-       g=(n*h)-r;
-       printf("%.2lf %.2lf\n",r,g);
+        r=0;
+        scanf("%lf",&n);
+        r=n/5;
+        h=(n*6)/10;
+        r=acos(-1)*r*r;
+        g=(n*h)-r;
+        printf("%.2lf %.2lf\n",r,g);
     }
     return 0;
 }

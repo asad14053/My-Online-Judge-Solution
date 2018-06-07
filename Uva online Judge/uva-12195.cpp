@@ -8,7 +8,7 @@ int main()
         long Sum=0,c=0;
         for(int i=0; i<a.size(); i++)
         {
-             // c=0;
+            // c=0;
             if(a[i]=='/')
             {
                 if(Sum==1000000) c++;

@@ -6,18 +6,18 @@ int main()
     while(scanf("%d",&n)==1)
     {
         if(n==0)
-        break;
-        for(j=0;j<n;j++)
+            break;
+        for(j=0; j<n; j++)
         {
             scanf("%lld",&a[j]);
         }
         c=a[0];
-        for(i=1;i<n;i++)
+        for(i=1; i<n; i++)
         {
             c=c^a[i];
         }
         if(c==0)
-        printf("No\n");
+            printf("No\n");
         else printf("Yes\n");
     }
     return 0;

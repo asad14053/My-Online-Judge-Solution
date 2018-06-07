@@ -5,9 +5,10 @@ int main()
 
     int n;
     while(cin>>n,n)
-    { queue<int>q;
+    {
+        queue<int>q;
         // cout<<"-----"<<endl;
-        for(int i=1;i<=n;i++)
+        for(int i=1; i<=n; i++)
         {
 
             q.push(i);

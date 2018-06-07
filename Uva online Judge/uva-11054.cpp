@@ -14,8 +14,8 @@ int main()
             if(x>=0)
                 s1+=x;
             else
-              s2+=-x;
-           //   cout<<s1<<"  "<<s2<<endl;
+                s2+=-x;
+            //   cout<<s1<<"  "<<s2<<endl;
             s+=abs(s1-s2);//s1=s2=0;
 
         }

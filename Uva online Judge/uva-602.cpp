@@ -7,8 +7,8 @@ const char* mn[] =
     "July", "August","September", "October", "November", "December"
 };
 const char* wn[] = {"Saturday", "Sunday", "Monday", "Tuesday",
-                               "Wednesday", "Thursday", "Friday"
-                              };
+                    "Wednesday", "Thursday", "Friday"
+                   };
 const int md[] = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
 
 bool ly(int ye)

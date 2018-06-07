@@ -9,11 +9,11 @@ int main()
     {
         cin>>m>>n;
 
-        for(int i=0;i<m;i++)
+        for(int i=0; i<m; i++)
             cin>>marr[i];
         sort(marr,marr+m);
 
-        for(int i=0;i<n;i++)
+        for(int i=0; i<n; i++)
             cin>>narr[i];
         sort(narr,narr+n);
 
@@ -36,5 +36,5 @@ int main()
 
         cout<<m+n-2*same<<endl;
     }
-return 0;
+    return 0;
 }

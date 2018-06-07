@@ -98,10 +98,10 @@ using namespace std;
 #define MOD 1000000007
 int main()
 {
-    #ifndef ONLINE_JUDGE
+#ifndef ONLINE_JUDGE
     //input();
     //output();
-    #endif
+#endif
     fast();
 //    clock_t begin, end;
 //    double time_spent;
@@ -118,7 +118,7 @@ int main()
     mp['L']='J';
     mp['M']='M';
     mp['O']='O';
-  //  mp['0']='0';
+    //  mp['0']='0';
     mp['S']='2';
     mp['2']='S';
     mp['T']='T';
@@ -134,22 +134,22 @@ int main()
     while(cin>>s)
     {
         bool f=0;
-         s1=s;
-         string s3="";
-         reverse(all(s));
-         if(s==s1)
+        s1=s;
+        string s3="";
+        reverse(all(s));
+        if(s==s1)
             f=1;
-            bool f1=0;
+        bool f1=0;
         fr(i,0,s1.size())
         {
             s3+=mp[s1[i]];
         }
-      //  bug1(s3,s);
-       // reverse(all(s1));
+        //  bug1(s3,s);
+        // reverse(all(s1));
         if(s3==s)
             f1=1;
         if(!f1 and !f)
-        cout<<s1<<" -- is not a palindrome."<<endl<<endl;
+            cout<<s1<<" -- is not a palindrome."<<endl<<endl;
         else if(!f1 and f )
             cout<<s1<<" -- is a regular palindrome."<<endl<<endl;
         else if(f1 and !f)
@@ -161,7 +161,7 @@ int main()
 //    time_spent = (double)(end - begin) / CLOCKS_PER_SEC;
 //    cout<<"Time spent = "<<time_spent<<endl;
 
-return 0;
+    return 0;
 }
 
 

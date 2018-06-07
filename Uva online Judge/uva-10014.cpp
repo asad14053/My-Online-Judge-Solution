@@ -17,7 +17,7 @@ int main()
         a1=(n*a+b-S)/(n+1);
         printf("%.2f\n",a1);
         if(j!=T-1)
-        printf("\n");
+            printf("\n");
     }
     return 0;
 }

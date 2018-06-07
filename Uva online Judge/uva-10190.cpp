@@ -7,25 +7,25 @@ int main()
     while(cin>>n>>m)
     {
         if(n<2 or m<2 or m>n)
-           {
-               cout<<"Boring!"<<endl;
-               continue;
-           }
-           vector<ll>v;
-           v.push_back(n);
-           while(n!=0 and n%m==0)
-           {
-               n/=m;
-               v.push_back(n);
-           }
-           if(n==1)
-           {
-               cout<<v[0];
-           for(int i=1;i<v.size();i++)
-            cout<<" "<<v[i];
+        {
+            cout<<"Boring!"<<endl;
+            continue;
+        }
+        vector<ll>v;
+        v.push_back(n);
+        while(n!=0 and n%m==0)
+        {
+            n/=m;
+            v.push_back(n);
+        }
+        if(n==1)
+        {
+            cout<<v[0];
+            for(int i=1; i<v.size(); i++)
+                cout<<" "<<v[i];
             cout<<endl;
-           }
-           else cout<<"Boring!"<<endl;
+        }
+        else cout<<"Boring!"<<endl;
 
     }
     return 0;

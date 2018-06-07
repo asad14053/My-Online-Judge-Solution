@@ -17,11 +17,11 @@ int main()
         mp[x].first=s;
         mp[x].second++;
     }
-    for(it=mp.begin();it!=mp.end();it++)
-    if((*it).second.second==1)
-        v.push_back((*it).second.first);
-        sort(v.begin(),v.end());
-        for(int i=0;i<v.size();i++)
-            cout<<v[i]<<endl;
+    for(it=mp.begin(); it!=mp.end(); it++)
+        if((*it).second.second==1)
+            v.push_back((*it).second.first);
+    sort(v.begin(),v.end());
+    for(int i=0; i<v.size(); i++)
+        cout<<v[i]<<endl;
     return 0;
 }

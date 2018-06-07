@@ -5,7 +5,7 @@ int main()
     int k,n,i=0;
     while(cin>>k)
     {
-      n=k;
+        n=k;
         if (n <= -1) break;
 
         n -= 1;

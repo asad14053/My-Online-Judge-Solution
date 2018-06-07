@@ -7,15 +7,15 @@ using namespace std;
 
 int pow_mod(int a, int pow, int mod)
 {
-        if(pow == 0) return 1;
+    if(pow == 0) return 1;
 
-        long long result = pow_mod(a, pow / 2, mod);
-        result *= result;
-        result %= mod;
+    long long result = pow_mod(a, pow / 2, mod);
+    result *= result;
+    result %= mod;
 
-        if(pow %2 == 1) result *= a;
+    if(pow %2 == 1) result *= a;
 
-        return (int)(result % mod);
+    return (int)(result % mod);
 }
 
 const int MAXP = 1000000000, MAX_PRIME = 31624;
@@ -24,43 +24,43 @@ vector<int> primes;
 
 bool isprime(int num)
 {
-        if(num < MAX_PRIME)
-                return IsPrime[num];
+    if(num < MAX_PRIME)
+        return IsPrime[num];
 
-        for(vector<int>::iterator iter = primes.begin(); iter != primes.end(); iter++)
-                if(num % *iter == 0) return false;
+    for(vector<int>::iterator iter = primes.begin(); iter != primes.end(); iter++)
+        if(num % *iter == 0) return false;
 
-        return true;
+    return true;
 }
 
 int main()
 {
-        int p, a;
+    int p, a;
 
-        fill_n(IsPrime, MAX_PRIME, true);
-        IsPrime[2] = true;
-        primes.reserve(MAX_PRIME);
-        for(int i = 2; i < MAX_PRIME; i++)
+    fill_n(IsPrime, MAX_PRIME, true);
+    IsPrime[2] = true;
+    primes.reserve(MAX_PRIME);
+    for(int i = 2; i < MAX_PRIME; i++)
+    {
+        if(IsPrime[i])
         {
-                if(IsPrime[i])
-                {
-                        primes.push_back(i);
-                        for(int j = i*i; j < MAX_PRIME; j += i)
-                                IsPrime[j] = false;
-                }
+            primes.push_back(i);
+            for(int j = i*i; j < MAX_PRIME; j += i)
+                IsPrime[j] = false;
         }
+    }
 
-        while(true)
-        {
-                scanf("%d%d", &p, &a);
-                if(p == 0 && a == 0) break;
+    while(true)
+    {
+        scanf("%d%d", &p, &a);
+        if(p == 0 && a == 0) break;
 
-                bool result = !isprime(p);
-                if(result)
-                        result = (pow_mod(a, p, p) == a);
+        bool result = !isprime(p);
+        if(result)
+            result = (pow_mod(a, p, p) == a);
 
-                puts(result ? "yes" : "no");
-        }
+        puts(result ? "yes" : "no");
+    }
 
-        return 0;
+    return 0;
 }

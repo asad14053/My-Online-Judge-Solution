@@ -27,7 +27,7 @@ void bfs(int x,int y)
             if(tx>=0 and tx<row and ty>=0 and ty<col and d[top.uu][top.vv]+1<d[tx][ty])
             {
                 d[tx][ty]=d[top.uu][top.vv]+1;
-             //   cout<<d[tx][ty]<<endl;
+                //   cout<<d[tx][ty]<<endl;
                 q.push(pii(tx,ty));
             }
         }

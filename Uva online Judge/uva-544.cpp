@@ -3,7 +3,7 @@ using namespace std;
 
 int main()
 {
-     //freopen("in.txt","r",stdin);
+    //freopen("in.txt","r",stdin);
     int n,e,i,j,k,c,tag,cs=1;
     string s1,s2;
     while(cin>>n>>e,n,e)

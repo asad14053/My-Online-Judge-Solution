@@ -7,7 +7,7 @@ int main()
     {
         a[i]=n;
 
-            sort(a,a+i+1);
+        sort(a,a+i+1);
         if(i%2==0)
             cout<<a[i/2]<<endl;
         else
@@ -18,5 +18,5 @@ int main()
 
         i++;
     }
-return 0;
+    return 0;
 }

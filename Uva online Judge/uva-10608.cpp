@@ -1,4 +1,4 @@
- ///    Md.ASADUZZAMAN
+///    Md.ASADUZZAMAN
 ///    Dept of ICT
 ///    MBSTU
 #include<bits/stdc++.h>
@@ -98,10 +98,10 @@ using namespace std;
 #define MOD 1000000007
 int main()
 {
-    #ifndef ONLINE_JUDGE
+#ifndef ONLINE_JUDGE
     //input();
     //output();
-    #endif
+#endif
     fast();
 //    clock_t begin, end;
 //    double time_spent;
@@ -116,7 +116,7 @@ int main()
 //    time_spent = (double)(end - begin) / CLOCKS_PER_SEC;
 //    cout<<"Time spent = "<<time_spent<<endl;
 
-return 0;
+    return 0;
 }
 
 

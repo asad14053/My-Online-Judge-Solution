@@ -26,13 +26,13 @@ int main()
         map<char,int>mp;
         int n;
         sc("%d",&n);
-        for(int i=1;i<=n;i++)
+        for(int i=1; i<=n; i++)
         {
             int tp=i;
             while(tp>0)
             {
-            mp[tp%10+'0']++;
-            tp=tp/10;
+                mp[tp%10+'0']++;
+                tp=tp/10;
             }
         }
         pf("%d %d %d %d %d %d %d %d %d %d\n",mp['0'],mp['1'],mp['2'],

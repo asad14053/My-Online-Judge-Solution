@@ -8,19 +8,19 @@ int main()
     while(gets(a))
     {
         if(strcmp(a,"caw caw"))
-          {
-             // cout<<"a---::"<<a<<endl;
-              for(int i=strlen(a)-1;i>=0;i--)
-              if(a[i]=='*')
-                s+=pow(2,strlen(a)-1-i);
-          }
+        {
+            // cout<<"a---::"<<a<<endl;
+            for(int i=strlen(a)-1; i>=0; i--)
+                if(a[i]=='*')
+                    s+=pow(2,strlen(a)-1-i);
+        }
         else
-       {
-        cout<<s<<endl;
-        s=0;
+        {
+            cout<<s<<endl;
+            s=0;
 
-         memset(a,'\0',sizeof(a));
-       }
+            memset(a,'\0',sizeof(a));
+        }
 
     }
 

@@ -8,7 +8,7 @@ int main()
     while(t--)
     {
         c=true;
-        for(int i=0;i<13;i++)
+        for(int i=0; i<13; i++)
         {
             cin>>m;
             c&=m>0;

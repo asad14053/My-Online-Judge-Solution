@@ -7,9 +7,14 @@ void f(int i,int j)
     if(i<-1||i>r-1||j<-1||j>c-1||s[i][j]!='@')
         return;
     s[i][j]='*';
-    f(i-1,j);f(i-1,j+1);f(i-1,j-1);
-    f(i,j+1);f(i,j-1);
-    f(i+1,j);f(i+1,j-1);f(i+1,j-1);
+    f(i-1,j);
+    f(i-1,j+1);
+    f(i-1,j-1);
+    f(i,j+1);
+    f(i,j-1);
+    f(i+1,j);
+    f(i+1,j-1);
+    f(i+1,j-1);
 }
 int main()
 {
@@ -20,7 +25,7 @@ int main()
         if(r==0&&c==0)
             break;
         cnt=0;
-        for(int j=0;j<r;j++)
+        for(int j=0; j<r; j++)
         {
             cin>>s[j];
         }

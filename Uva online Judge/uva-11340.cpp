@@ -11,13 +11,13 @@ int main()
         for(int k=1; k<=z; k++)
         {
             p=0;
-           cin>>v;
-           getchar();
-           memset(n,0,sizeof(n));
+            cin>>v;
+            getchar();
+            memset(n,0,sizeof(n));
             for(j=1; j<=v; j++)
                 cin>>x[j]>>n[j];
-             cin>>l;
-             getchar();
+            cin>>l;
+            getchar();
             for(j=1; j<=l; j++)
             {
 
@@ -29,7 +29,7 @@ int main()
 
                 }
             }
-           printf("%.2lf$\n",p/100);
+            printf("%.2lf$\n",p/100);
         }
     }
     return 0;
