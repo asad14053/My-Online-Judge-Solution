@@ -1,0 +1,386 @@
+#include<stdio.h>
+#include<dos.h>
+#include<process.h>
+#include<graphics.h>
+#include<conio.h>
+
+int array1[20][100],array2[20][100],array3[20][100],array4[20][100];
+
+void get_coordinate()
+{
+	int i,j,g,h,m=1,p,t,e,n,q,r,u;
+
+		for(i=1,h=3,q=1;i<=4;++i,h=h+13,q+=4)
+		{
+			for(p=h,r=1,j=0;r<=4;++p,j+=25,++r)
+			{
+				m=q;
+				for(t=1;t<=4;++t)
+				{
+					array1[m][p]=180;
+					array2[m][p]=354-j;
+					array3[m][p]=213;
+					array4[m][p]=379-j;
+					++m;
+				}
+			}
+		}
+
+		for(i=1,h=7,q=1;i<=4;++i,h+=13,q+=4)
+		{
+			for(p=h,r=1,j=0;r<=6;++r,++p,j+=25)
+			{
+				m=q;
+				for(t=1;t<=4;++t)
+				{
+					array1[m][p]=155-j;
+					array2[m][p]=246;
+					array3[m][p]=180-j;
+					array4[m][p]=279;
+					++m;
+				}
+			}
+		}
+
+		for(i=1,h=16,q=1;i<=4;++i,h+=13,q+=4)
+		{
+			if(h==55)
+				h=3;
+			for(r=1,p=h,j=0;r<=4;++r,++p,j+=25)
+			{
+				m=q;
+				for(t=1;t<=4;++t)
+				{
+					array1[m][p]=80+j;
+					array2[m][p]=180;
+					array3[m][p]=105+j;
+					array4[m][p]=213;
+					++m;
+				}
+			}
+		}
+
+		for(i=1,h=20,q=1;i<=4;++i,h+=13,q+=4)
+		{
+			if(h==59)
+				h=7;
+			for(j=0,r=1,p=h;r<=6;++r,++p,j+=25)
+			{
+				m=q;
+				for(t=1;t<=4;++t)
+				{
+					array1[m][p]=180;
+					array2[m][p]=155-j;
+					array3[m][p]=213;
+					array4[m][p]=180-j;
+					++m;
+				}
+			}
+	}
+
+	for(i=1,h=29,q=1;i<=4;++i,h=h+13,q+=4)
+	{
+		if(h==55)
+			h=3;
+		for(j=0,r=1,p=h;r<=4;++r,++p,j+=25)
+		{
+			m=q;
+			for(t=1;t<=4;++t)
+			{
+				array1[m][p]=246;
+				array2[m][p]=80+j;
+				array3[m][p]=279;
+				array4[m][p]=105+j;
+				++m;
+			}
+		}
+	}
+
+	for(i=1,h=33,q=1;i<=4;++i,h+=13,q+=4)
+	{
+		if(h==59)
+			h=7;
+		for(j=0,r=1,p=h;r<=6;++r,++p,j+=25)
+		{
+			m=q;
+			for(t=1;t<=4;++t)
+			{
+				array1[m][p]=279+j;
+				array2[m][p]=180;
+				array3[m][p]=304+j;
+				array4[m][p]=213;
+				++m;
+			}
+		}
+	}
+
+	for(i=1,h=42,q=1;i<=4;++i,h+=13,q+=4)
+	{
+		if(h==55)
+			h=3;
+		for(r=1,p=h,j=0;r<=4;++r,++p,j+=25)
+		{
+			m=q;
+			for(t=1;t<=4;++t)
+			{
+				array1[m][p]=354-j;
+				array2[m][p]=246;
+				array3[m][p]=379-j;
+				array4[m][p]=279;
+				++m;
+			}
+		}
+	}
+
+	for(i=1,h=46,q=1;i<=4;++i,h+=13,q+=4)
+	{
+		if(h==59)
+			h=7;
+		for(j=0,r=1,p=h;r<=6;++r,++p,j+=25)
+		{
+			m=q;
+			for(t=1;t<=4;++t)
+			{
+				array1[m][p]=246;
+				array2[m][p]=279+j;
+				array3[m][p]=279;
+				array4[m][p]=304+j;
+				++m;
+			}
+		}
+	}
+/////////bar player 1////////////
+	for(q=0,m=2,t=0,r=0;q<4;++q,m+=13,r+=32)
+	{
+		for(i=0,j=0;i<4;++i,j+=15)
+		{
+			++t;
+			array1[t][m]=40+j+j;
+			array2[t][m]=288+r;
+			array3[t][m]=70+j+j;
+			array4[t][m]=318+r;
+		}
+	 }
+	////////player 2/////////////////
+	 for(q=0,m=41,t=0,r=0;q<4;++q,m+=13,r+=32)
+	 {
+		for(i=0,j=0;i<4;++i,j+=15)
+		{
+			if(m==54)
+				m=2;
+			++t;
+			array1[t][m]=289+j+j;
+			array2[t][m]=288+r;
+			array3[t][m]=319+j+j;
+			array4[t][m]=318+r;
+
+		}
+	}
+/////////////////player 3///////////////
+	 for(q=0,m=28,t=0,r=0;q<4;++q,m+=13,r+=32)
+	 {
+		for(i=0,j=0;i<4;++i,j+=15)
+		{
+			++t;
+			if(m==54)
+				m=2;
+			array1[t][m]=289+j+j;
+			array2[t][m]=50+r;
+			array3[t][m]=319+j+j;
+			array4[t][m]=80+r;
+		}
+	 }
+/////////////player 4///////////////////
+	for(q=0,m=15,t=0,r=0;q<4;++q,m+=13,r+=32)
+	 {
+		for(i=0,j=0;i<4;++i,j+=15)
+		{
+			if(m==54)
+				m=2;
+			++t;
+			array1[t][m]=40+j+j;
+			array2[t][m]=50+r;
+			array3[t][m]=70+j+j;
+			array4[t][m]=80+r;
+		}
+	 }
+	 //////////////paka box///////////////
+	 for(i=53,j=25;i<=57;++i,j+=25)
+	{
+		for(t=13;t<=16;++t)
+		{
+			array1[t][i]=30+j;
+			array2[t][i]=213;
+			array3[t][i]=55+j;
+			array4[t][i]=246;
+		}
+	}
+	 for(i=53,j=25;i<=57;++i,j+=25)
+	{
+		for(t=9;t<=12;++t)
+		{
+			array1[t][i]=213;
+			array2[t][i]=30+j;
+			array3[t][i]=246;
+			array4[t][i]=55+j;
+		}
+	}
+
+	for(i=53,j=25;i<=57;++i,j+=25)
+	{
+		for(t=5;t<=8;++t)
+		{
+			array1[t][i]=404-j;
+			array2[t][i]=213;
+			array3[t][i]=429-j;
+			array4[t][i]=246;
+		}
+	}
+
+	for(i=53,j=25;i<=57;++i,j+=25)
+	{
+		for(t=1;t<=4;++t)
+		{
+			array1[t][i]=213;
+			array2[t][i]=404-j;
+			array3[t][i]=246;
+			array4[t][i]=429-j;
+		}
+	}
+	////////set guti bar position/////////
+	int k=1;
+	for(i=1,n=25;i<=4;++i,n+=50)
+	{
+
+		for(j=1,m=31;j<=4;++j,m+=31)
+		{
+			array1[k][1]=427+m;
+			array2[k][1]=33+n;
+			array3[k][1]=456+m;
+			array4[k][1]=56+n;
+			++k;
+		}
+	}
+
+///////////mistack position///////////////
+	for(q=1,i=0,m=13;q<=4;++q,m+=13)
+	{
+
+		for(j=1;j<=4;++j)
+		{
+			++i;
+			array1[i][m]=30;
+			array2[i][m]=213;
+			array3[i][m]=55;
+			array4[i][m]=246;
+		}
+	}
+	for(q=1,i=0,m=26;q<=4;++q,m+=13)
+	{
+		if(m==65)
+			m=13;
+		for(j=1;j<=4;++j)
+		{
+			++i;
+			array1[i][m]=213;
+			array2[i][m]=30;
+			array3[i][m]=246;
+			array4[i][m]=55;
+		}
+	 }
+	 for(q=1,i=0,m=39;q<=4;++q,m+=13)
+	 {
+		if(m==65)
+			m=13;
+		for(j=1;j<=4;++j)
+		{
+			++i;
+			array1[i][m]=404;
+			array2[i][m]=213;
+			array3[i][m]=429;
+			array4[i][m]=246;
+		}
+	 }
+	 for(q=1,i=0,m=52;q<=4;++q,m+=13)
+	 {
+		if(m==65)
+			m=13;
+		for(j=1;j<=4;++j)
+		{
+			++i;
+			array1[i][m]=213;
+			array2[i][m]=404;
+			array3[i][m]=246;
+			array4[i][m]=429;
+		}
+	}
+
+////////////again mistack/////////
+
+		for(j=1,i=0;j<=4;++j)
+		{
+			++i;
+			array1[i][14]=30;array2[i][14]=180;array3[i][14]=55;array4[i][14]=213;
+		}
+		for(j=1,i=4;j<=4;++j)
+		{
+			++i;
+			array1[i][27]=30;array2[i][27]=180;array3[i][27]=55;array4[i][27]=213;
+		}
+		for(j=1,i=8;j<=4;++j)
+		{
+			++i;
+			array1[i][40]=30;array2[i][40]=180;array3[i][40]=55;array4[i][40]=213;
+		}
+		for(j=1,i=0;j<=4;++j)
+		{
+			++i;
+
+			array1[i][27]=246;array2[i][27]=30;array3[i][27]=279;array4[i][27]=55;
+
+		}
+		for(j=1,i=4;j<=4;++j)
+		{
+			++i;
+
+			array1[i][40]=246;array2[i][40]=30;array3[i][40]=279;array4[i][40]=55;
+
+		}
+		for(j=1,i=12;j<=4;++j)
+		{
+			++i;
+			array1[i][14]=246;array2[i][14]=30;array3[i][14]=279;array4[i][14]=55;
+
+		}
+		for(j=1,i=0;j<=4;++j)
+		{
+			++i;
+			array1[i][40]=404;array2[i][40]=246;array3[i][40]=429;array4[i][40]=279;
+		}
+		for(j=1,i=8;j<=4;++j)
+		{
+			++i;
+			array1[i][14]=404;array2[i][14]=246;array3[i][14]=429;array4[i][14]=279;
+		}
+		for(j=1,i=12;j<=4;++j)
+		{
+			++i;
+			array1[i][27]=404;array2[i][27]=246;array3[i][27]=429;array4[i][27]=279;
+		}
+		for(j=0,i=4;j<4;++j)
+		{
+			++i;
+			array1[i][14]=180;array2[i][14]=404;array3[i][14]=213;array4[i][14]=429;
+		}
+		for(j=0,i=8;j<4;++j)
+		{
+			++i;
+			array1[i][27]=180;array2[i][27]=404;array3[i][27]=213;array4[i][27]=429;
+		}
+		for(j=0,i=12;j<4;++j)
+		{
+			++i;
+			array1[i][40]=180;array2[i][40]=404;array3[i][40]=213;array4[i][40]=429;
+		}
+
+}
